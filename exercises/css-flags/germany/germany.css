@@ -1,0 +1,25 @@
+
+.parent{
+  height: 300px;
+  width: 600px;
+  background-color: #ffc707;
+  position: relative;
+  right: 0;
+}
+
+.top{
+  height: 100px;
+  width: 600px;
+  background-color: black;
+  position: absolute;
+  z-index: 5;
+}
+
+.center{
+  height: 100px;
+  width: 600px;
+  background-color: #d80000;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+}

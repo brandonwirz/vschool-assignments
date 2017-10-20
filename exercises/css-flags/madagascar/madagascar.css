@@ -1,0 +1,27 @@
+
+.parent{
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  position: relative;
+  border: 3px solid rgb(191, 187, 187)
+}
+
+.top{
+  height: 150px;
+  width: 350px;
+  background-color: #fc342c;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+.center{
+  height: 150px;
+  width: 350px;
+  background-color: #007333;
+  position: absolute;
+  bottom: 0;
+  right:0;
+
+}

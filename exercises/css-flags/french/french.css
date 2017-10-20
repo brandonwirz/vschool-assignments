@@ -1,0 +1,28 @@
+
+.parent{
+  height: 400px;
+  width: 600px;
+  background-color: red;
+  position: relative;
+  right: 0;
+  border: 3px solid rgb(191, 187, 187)
+}
+
+.left{
+  height: 400px;
+  width: 200px;
+  background-color: #00208a;
+  position: absolute;
+  top:0%;
+  left:0%;
+}
+
+.center{
+  height: 400px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  top:0%;
+  left:50%;
+  transform:translateX(-50%);
+}

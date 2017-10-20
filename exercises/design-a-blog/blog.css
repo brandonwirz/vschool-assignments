@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  margin: auto 0;
+  width: 100%;
+  height:30px;
+  position: fixed;
+  background-color: grey;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  letter-spacing: 1px;
+}
+#container{
+  margin: auto 0;
+  background-color: #111111;
+  color: #666;
+}
+
+.feed{
+  color: #666;
+  background-color: #111;
+  margin: auto 0;
+}

@@ -1,0 +1,15 @@
+
+h1{
+  font-size: 2em;
+    display:block;
+    text-align:center;
+    margin: 0 auto;
+
+}
+
+p{
+  float: left;
+  display:inline;
+  width:30%;
+  padding-right: 2%;
+}
