@@ -1,15 +1,32 @@
-
 h1{
   font-size: 2em;
     display:block;
     text-align:center;
     margin: 0 auto;
-
+    color: #444444;
 }
-
+h3  {
+  color: #444444;
+}
 p{
   float: left;
   display:inline;
   width:30%;
   padding-right: 2%;
+  color: #444444;
+  position: relative;
+  overflow: visible;
+}
+
+.spanIt{
+  font-style: italic;
+}
+.spanCl{
+  color: red;
+}
+img{
+ margin-top:5px;
+ padding: 0 0 1px 3px;;
+ width:50px;
+ float:left;
 }

@@ -1,0 +1,44 @@
+
+.parent{
+  height: 300px;
+  width: 400px;
+  background-color: #3a7728;
+  position: relative;
+  right: 0;
+  border: 2px solid #E9F6FE;
+
+}
+
+.top{
+  height: 100px;
+  width: 400px;
+  background-color: #CE1126;
+  position: absolute;
+  z-index: 5;
+}
+
+.center{
+  height: 100px;
+  width: 400px;
+  background-color: #0C1C8C;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.thin-white{
+  height: 20px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  z-index: 5;
+  top: 60%;
+}
+
+.lineOne{
+  top:33%;
+
+}
+.linetwo{
+  top:26%;
+}
