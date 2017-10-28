@@ -8,7 +8,8 @@
 // .toLowerCase()
 // .toUpperCase()
 // .substr()
-//---toLowerCase()---////
+
+// //---toLowerCase()---////
 // function lowerCase(string){
 //   console.log(string.toLowerCase())
 // }
@@ -30,7 +31,7 @@
 //   return dog.substr(1,3);
 // }
 // subString("Rotty");
-// //ott
+
 
 
 ////---match()---////
@@ -41,6 +42,7 @@
 // }
 // console.log(match(str));
 
+
 ////---lastIndexOf()---////
 // var arr = ["dog", 8, "cat", "pup", 2];
 // function lastIndex(){
@@ -48,18 +50,16 @@
 //   return returned;
 // }
 // console.log(lastIndex());
-// //4
 
 
-// // ////---indexOf()---////
+
+////---indexOf()---////
 // var arr = ["dog", 8, "cat", "pup", 2];
 // function indexOf(){
-//   var returned = arr.indexOf('cat');
+//   var returned = arr.indexOf("cat");
 //   return returned;
 // }
 // console.log(indexOf());
-// //2
-
 
 
 // ////---slice()---////
@@ -81,15 +81,6 @@
 // console.log(concatString());
 
 
-////---slice()---////
-// var arr = ["gun", 20, "three", "pug", 15];
-// function slice(){
-//   var returned = arr.slice(2, 4)
-//   return returned;
-// }
-// console.log(slice());
-
-
 ////---split()---////
 // var str = 'Hi,How,are,you?';
 //
@@ -108,32 +99,25 @@ function splitString(){
 }
 //str.split(returned);
 //splitString()
-console.log(splitString());
+// console.log(splitString());
 //console.log(returned);
 
-// function splitString(){
-// var str = "The year was 2011.";
-// var splitted = str.split(" ",2);
-//
-//   console.log(splitted.toString());
-// }
-// console.log(splitString());
+function splitString(){
+var str = "The year was 2011.";
+var splitted = str.split(" ",2);
 
-//---replace()---////
-// var str = "Dog, black!";
-// function replace(){
-//   var returned = str.replace("Cat", "tan")
-//   return returned;
-// }
-// //console.log(replace());
-// replace(str);
-
-
-var withoutEnd=function(str) {
-
-  var str1 = str.split("");
-  str1.shift();
-  str1.pop();
-  var newString = str.join();
-  return newString;
+  console.log(splitted.toString());
 }
+console.log(splitString());
+
+
+
+// var withoutEnd=function(str) {
+//
+//   var str1 = str.split("");
+//   str1.shift();
+//   str1.pop();
+//   var newString = str.join();
+//   return newString;
+// }
+// console.log(withoutEnd);

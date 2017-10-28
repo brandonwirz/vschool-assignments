@@ -11,11 +11,3 @@ roomItems = {
 }
 //console.log(roomItems);
 console.log(roomItems.photos[0].Timber);
-
-
-
-
-
-var str = "hey whats your name";
-var returned = str.split(‘h’);
-console.log(returned);

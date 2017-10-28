@@ -1,5 +1,4 @@
 function twoNumbers(param1, param2){
-  //console.log(param1 * param2)
   return param1 * param2;
 }
 var param1 = 5;
@@ -15,14 +14,14 @@ console.log(largestNum());
 
 
 var val = 48;
-function evenOrOdd(val){//parameter
+function evenOrOdd(val){
   if (val % 2 === 0){
     return "even";
   }else{
     return "odd";
   }
 }
-evenOrOdd(48);//argument
+evenOrOdd(48);
 
 
  function twentyChars(string){

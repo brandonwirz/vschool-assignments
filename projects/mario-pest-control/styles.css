@@ -1,0 +1,26 @@
+#container{
+  margin: 0 auto;
+  width: 600px;
+
+}
+
+ul{
+  list-style-type: none;
+}
+.inputs{
+    width: 40px;
+    border: thin solid rgb(2, 34, 4);
+}
+#number-one, #number-two, #number-three{
+  margin: 0 auto;
+  width: 40px;
+
+}
+footer{
+
+  background-color: #777;
+  width: 300px;
+  height:100px;
+  color: white;
+
+}

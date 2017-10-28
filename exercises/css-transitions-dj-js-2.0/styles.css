@@ -1,0 +1,117 @@
+
+.box1{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 10%;
+  transition: all 1s ease-in .1s
+}
+.box1:hover{
+  box-shadow:none;
+  border-radius: 20px;
+  background-color: red;
+  border: 1px solid white;
+  box-shadow: 3px 3px 2px 0 #464444;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  background-color: blue;
+}
+
+.box2:hover{
+  width: 105px;
+  height: 105px;
+  margin-top:10px;
+  background-color: orange;
+  border-radius: 10%;
+  border: 3px solid blue;
+  transition-duration: .15s;
+}
+
+.box3{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  background-color: purple;
+}
+
+.box3:hover{
+  width: 300px;
+  height: 300px;
+  background-color: rgba(207, 204, 67, .9);
+  transition: width 2s, height 2s;
+}
+
+.box4{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  background-color: #F9B307
+}
+.box4:hover{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  background-color: violet;
+  transition: width 2s, height 2s;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.box5 .text{
+  margin-top: 50px;
+  text-align: center;
+}
+.box5{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  color: white;
+
+  font-size: .8em;
+  background-color: teal;
+}
+.box5:hover{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  background-color: #FB8E07;
+  transition: width 2s, height 2s;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+
+.box6{
+  width: 100px;
+  height: 100px;
+  margin-top:10px;
+  background-color: rgb(238, 113, 21);
+}
+.box6:hover{
+  width: 500px;
+  height: 100px;
+  margin-top:10px;
+
+  background-color: rgb(17, 40, 150);
+  -webkit-transition: width 2s, height 2s,
+  -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transform: rotate(180deg); /* Safari */
+   transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*transition-property: all;
+transition-duration: .5s;
+transition-timing-function:ease-in-out;
+transition-delay: .2s;*/

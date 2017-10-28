@@ -8,29 +8,25 @@ var lyrics = ["This", "hit", "that", "ice", "cold",
               "with", "Saint", "Laurent", "Gotta", "kiss",
               "myself", "I'm", "so", "pretty"];
 
-// function printArray(){
-//   //mylyrics.join(', ');
-//   console.log(lyrics.join(" "));
-//
-// }
-// printArray(lyrics);
+function printArray(){
+  console.log(lyrics.join(" "));
+
+}
+printArray(lyrics);
 
 
-// function songBackwards(){
-//   console.log(lyrics.reverse().join(" "));
-// }
-// songBackwards();
+function songBackwards(){
+  console.log(lyrics.reverse().join(" "));
+}
+songBackwards();
 
 
-
-// function everyOtherWord(){
-//     for (var i = 0; i <= lyrics.length; i += 2){
-//       console.log(lyrics[i]);
-//     }
-// }
-//
-// everyOtherWord();
-
+function everyOtherWord(){
+    for (var i = 0; i <= lyrics.length; i += 2){
+      console.log(lyrics[i]);
+    }
+}
+everyOtherWord();
 
 
 function reverseTwoWords(){

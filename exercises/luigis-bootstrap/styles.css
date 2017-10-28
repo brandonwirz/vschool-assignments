@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'SuperMario';
+    src: url('fonts/SuperMario256.ttf');
+}
+.yellow{
+  background-color: #ffd40d;
+  height:75px;
+}
+h1.header-text{
+  margin-left:20px;
+  font-family: 'SuperMario';
+  color: #e81c20;
+}
+
+.red{
+    background-color: #e81c20;
+    height:266px;
+    margin-bottom:30px;
+}
+
+#luigi{
+  width:200px;
+  height:225px;
+  margin-top: 20px;
+}
+h1.about-me{
+    font-family: 'SuperMario';
+    color: red;
+}
+p{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom:30px;
+    font-family: 'SuperMario';
+    color: red;
+}
+.text-center{
+
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+ .mushroom {
+   margin-top: 12px;
+   width:50px;
+   height:50px;
+ }
