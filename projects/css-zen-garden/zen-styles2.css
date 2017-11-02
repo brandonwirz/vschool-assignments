@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+/*http://www.csszengarden.com/214/verdemoderna.woff*/
+
+/*font-family: 'Julius Sans One', sans-serif;*/
+/*font-family: 'Libre Baskerville', sans-serif;*/
+
+@media (min-width: 400px) {
+/* Styles */
+
+#container{
+
+}
+header{
+  display:block;
+  width:100%;
+  /*background-color: grey;*/
+  /*background-image: url("/images/huntington.jpg");*/
+}
+
+#headerImg{
+
+    margin-top: 0px;
+    width:100%;
+    z-index: 0;
+}
+
+.insideHeader{
+  margin: auto;
+  float: left;
+}
+.logo{
+
+  width: 40px;
+  height:40px;
+  z-index:5
+
+}
+h2{
+
+  /*text-align:center;*/
+  float:left;
+  border: 1px solid #ccc;
+    display: inline;
+  border: 1px solid grey;
+  color: white;
+  font-size: 25px;
+  font-family: 'Julius Sans One', sans-serif;
+  z-index:5
+}
+h3{
+  float:left;
+  border: 1px solid #ccc;
+    display: inline;
+  border: 1px solid blue;
+width 400;
+  /*text-align:center;*/
+  color: white;
+  font-size: 15px;
+font-family: 'Libre Baskerville', sans-serif;
+font-style: italic;
+z-index:5
+}
+
+}
+
+
+/*@media only screen and (min-width: 768px){
+
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1100px){
+
+
+
+}*/

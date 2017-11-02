@@ -20,7 +20,6 @@ console.log(removedItem);
 var reverseArray = food.reverse();
 console.log(reverseArray);
 
-
 var returnedJoin = food.join();
 console.log("fruit: ", fruit);
 console.log("vegetables: ", vegetables.length);

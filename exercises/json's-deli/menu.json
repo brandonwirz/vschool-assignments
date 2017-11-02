@@ -1,0 +1,41 @@
+{
+  "appetizers": {
+    "hot apps": ["onion rings", "patato Skins", "vampire fries"],
+    "cold apps": ["chips and guacamole", "chips and salsa"],
+    "large apps": ["big salad", "large bowl of soup", "daily special"]
+  },
+
+  "sandwiches": {
+  "cold sandwiches": {
+  "turkey": {
+    "ingredients": ["prussian bread", "lettuce", "dijon mustard", "onion"],
+    "price": 9
+  },
+
+  "hoagie": {
+    "ingredients": ["french bread", "turkey", "ham", "mustard"],
+    "price": 6.50
+  },
+
+  "hot sandwiches": {
+    "turkey rueben": {
+      "ingredients": ["french bread", "turkey", "mustard", "sauerkraut","thousand island"]
+    },
+
+    "turkey club no bacon": {
+      "ingredients": ["italian bread", "turkey", "mustard", "tomato", "lettuce"]
+    }
+   }
+  },
+  "deserts": {
+    "for two": ["devils cake chocolate", "tiramisu", "monster sundae"],
+    "for one": ["scoop of ice cream", "individual sundae", "mini milkshake"]
+  },
+
+  "drinks": {
+    "cold": ["soda", "water", "beer"],
+    "hot": ["tea", "coffee", "cider"],
+    "price": 2
+    }
+  }
+}

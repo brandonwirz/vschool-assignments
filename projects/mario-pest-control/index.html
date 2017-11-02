@@ -1,36 +1,40 @@
 <html>
 <head>
   <title>Mario Pest Control</title>
+
     <link rel="stylesheet" href="styles.css"/>
+
+
 </head>
 <body>
+  <header><h1>Mario Pest Control</h1></header>
   <div id="container">
-
-
-      <h1>Mario Pest Control</h1>
     <ul>
-      <li><h3>Goombas: 12 baddies caught</h3></li>
-      <img src="images/Goomba.png">
-      <li> 5 coins</li>
-      <li><h3>Bob-ombs: 8 baddies caught</h3> </li>
-      <img src="images/Bob-omb.png">
-      <li>7 coins</li>
-      <li><h3>Cheep-cheeps:</h3> 5 baddies caught</li>
-      <img src="images/Cheep-cheeps.png">
-      <li>11 coins</li>
+       <li><img id="goomba" src="images/Goomba.png"><h3>Goombas: 12 baddies caught</h3></li>
+          <li> 5 coins x 12 baddies = <b>60</b> </li>
+           <li><img id="bob-omb" src="images/Bob-omb.png"><h3>Bob-ombs:<span> 8 baddies caught </span></h3></li>
+           <li>7 coins x 8 baddies = <b>56</b></li>
+          <li><img id="cheep" src="images/Cheep-cheeps.png"><h3>Cheep-cheeps: 5 baddies caught</h3> </li>
+        <li>11 coins x 5 baddies = <b>55</b></li>
       </ul>
+        <div class="inputs">
+          <input type="number" id="baddie"/>
+          <input type="number" id="baddie2"/>
+          <input type="number" id="baddie3"/>
+          <button id="button">Add em up!</button>
+  <div class="results">Total Baddies Caught:</div>
+        <div id="result"> </div>
 
-    <div class ="inputs">
-      <input type="number" id="number-one"/>
-      <input type="number" id="number-two"/>
-      <input type="number" id="number-three"/>
-      <button id="add-number">Add</button>
-      <div id="add-result"></div>
-    </div>
-    <footer>email address
-Mario's company website url
-Mario's physical address</footer>
-</div>
+
+        </div>
+      </div>
+      <footer>
+        <div class="footerText">
+            <span class="para" href="mailto:mario@mariobros.com"><b>Email:</b> mario@mariobros.com</span>
+            <span class="para" href="#"><b>Web:</b> www.mariobros.com</span>
+            <span class="para"><b>Address:</b>1800 Hampton Way, Beverly Hills, Ca 90210</span>
+        </div>
+      </footer>
   <script src="mario.js"></script>
 </body>
 </html>

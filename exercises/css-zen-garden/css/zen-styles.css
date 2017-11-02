@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+/*http://www.csszengarden.com/214/verdemoderna.woff*/
+
+/*font-family: 'Julius Sans One', sans-serif;*/
+/*font-family: 'Libre Baskerville', sans-serif;*/
+
+/*@media only screen (min-width: 320px) {*/
+/* Styles */
+  header{
+    display: block;
+    width: 100%;
+    background-color: #grey;
+    background-image: url("images/huntington.jpg")
+
+  }
+
+
+/*}*/
+
+
+@media only screen and (min-width: 768px){
+
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1100px){
+
+
+
+}

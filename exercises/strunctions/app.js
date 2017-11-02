@@ -9,48 +9,14 @@
 // .toUpperCase()
 // .substr()
 
-// //---toLowerCase()---////
-// function lowerCase(string){
-//   console.log(string.toLowerCase())
-// }
-// lowerCase("DOG")
-
-
-
-// alt replace///////////
-// function replace(){
-//   var str = "Dog, black!";
-//   var newstr = str.replace(/black/i,'tan');
-//   console.log(newstr);
-// }
-//   replace();
-
-
-////---substr()---////
-// function subString(dog){
-//   return dog.substr(1,3);
-// }
-// subString("Rotty");
-
-
-
-////---match()---////
-// var str = "The dog is running wildly!";
-// function match(){
-//   var returned = str.match('dog');
+////---concat()---////
+// var str1 = 'hey';
+// var str2 = 'ho';
+// function concatString(){
+//   var returned = str1.concat(str2);
 //   return returned;
 // }
-// console.log(match(str));
-
-
-////---lastIndexOf()---////
-// var arr = ["dog", 8, "cat", "pup", 2];
-// function lastIndex(){
-//   var returned = arr.lastIndexOf(2);
-//   return returned;
-// }
-// console.log(lastIndex());
-
+// console.log(concatString());
 
 
 ////---indexOf()---////
@@ -62,23 +28,59 @@
 // console.log(indexOf());
 
 
-// ////---slice()---////
-// var arr = ["gun", 20, "three", "pug", 15];
+////---lastIndexOf()---////
+// var arr = ["dog", 8, "cat", "pup", 2];
+// function lastIndex(){
+//   var returned = arr.lastIndexOf(2);
+//   return returned;
+// }
+// console.log(lastIndex());
+
+
+////---match()---////
+// var str = "Rain, train and disdain";
+// function match(){
+//   var returned = str.match(/ain/g);
+//   return returned
+// }
+// console.log(match());
+
+
+////----replace()----////
+// var str = "Dog, black!";
+// function replace(){
+//   var newstr = str.replace('black', 'tan');
+//   console.log(newstr);
+// }
+//   replace();
+
+
+////---slice()---////
+// var str = "They ran all night long!";
 // function slice(){
-//   var returned = arr.slice(2, 4)
+//   var returned = str.slice(1, 20)
 //   return returned;
 // }
 // console.log(slice());
 
 
-////---concat()---////
-// var str1 = 'hey';
-// var str2 = 'ho';
-// function concatString(){
-//   var returned = str1.concat(str2);
+////---match()---////
+// var str = "The dog is running wildly!";
+// function match(){
+//   var returned = str.match('dog');
 //   return returned;
 // }
-// console.log(concatString());
+// console.log(match(str));
+
+
+// function splitString(){
+// var str = "The year was 2011.";
+// // var splitted = str.split(" ",2);
+// var splitted = str.split(" ",2);
+//
+//   console.log(splitted.toString());
+// }
+// console.log(splitString());
 
 
 ////---split()---////
@@ -92,32 +94,39 @@
 // console.log(str);
 
 
-function splitString(){
-  var str = 'Hi How are you?';
-  var splitted = str.split(', ');
-  return splitted.join();
-}
+// function splitString(){
+//   var str = 'Hi How are you?';
+//   var splitted = str.split(', ');
+//   return splitted.join();
+// }
 //str.split(returned);
 //splitString()
 // console.log(splitString());
 //console.log(returned);
 
-function splitString(){
-var str = "The year was 2011.";
-var splitted = str.split(" ",2);
 
-  console.log(splitted.toString());
-}
-console.log(splitString());
-
-
-
-// var withoutEnd=function(str) {
-//
-//   var str1 = str.split("");
-//   str1.shift();
-//   str1.pop();
-//   var newString = str.join();
-//   return newString;
+//---toLowerCase()---////
+// function lowerCase(string){
+//   console.log(string.toLowerCase())
 // }
-// console.log(withoutEnd);
+// lowerCase("DOG")
+
+
+// function upperCase(string){
+//   console.log(string.toUpperCase())
+// }
+// upperCase("cat");
+
+
+////---substr()---////
+// function subString(dog){
+//   return dog.substr(1,3);
+// }
+// subString("Rotty");
+
+
+// ////---substr()---////
+// function subString(dog){
+//   return dog.substr(dog.length / 2);
+// }
+// subString("Rottytotty");
