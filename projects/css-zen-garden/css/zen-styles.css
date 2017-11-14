@@ -1,0 +1,1330 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+@font-face {
+    font-family: verdemoderna;
+    src: url('fonts/verdemoderna.woff');
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+/*http://www.csszengarden.com/214/verdemoderna.woff*/
+
+@media (max-width: 420px) {
+
+  #container{
+    position:relative;
+  }
+  header{
+    width:100%;
+    text-align: center;
+  }
+
+  #headerImg{
+      position: relative;
+      margin-top: 0px;
+      /*display: block;*/
+      /*width:100%;*/
+      height: 240px;
+      z-index: 0;
+      background-image: url("../images/huntington_sm.jpg");
+      background-repeat: no-repeat;
+  }
+
+.transDiv{
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom:0;
+    z-index: 5;
+    width:100%;
+    height: 71px;
+  }
+
+  .insideHeader{
+    position: relative;
+    background-color: #144849;
+    width:100%;
+    height:9px;
+  }
+
+  .logo-lg{
+    visibility:hidden;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+}
+  h1{
+    right: 180px;
+    top: 24px;
+    text-align: center;
+    position: absolute;
+    width: 40px;
+    height:40px;
+    color: white;
+  }
+  h2{
+    top:82px;
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-size: 28px;
+  font-family: 'Julius Sans One', sans-serif;
+
+    z-index:5
+  }
+  h3{
+    top:123px;
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;
+    position: absolute;
+    /*display: block;*/
+    color: rgba(255, 255, 255, .55);
+    font-size: 18px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    z-index:5;
+  }
+  h4{
+    font-size: 18px;
+    margin: 32px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+  h5{
+    font-size: 18px;
+    margin: 30px 34px 0px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+  .nav-button{
+    text-align: center;
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    color: rgba(255, 255, 255, .55);
+    font-size: 16px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    top: 120px;
+    z-index:5;
+    /*left: 120px;*/
+
+  }
+
+  .main{
+    position: relative;
+    margin:20px 0px 0;
+  }
+  p{
+    margin: 15px 34px 0px 40px;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #333333;
+    line-height: 23px;
+  }
+  img.arrow{
+    top: 187px;
+    right: 23px;
+    position: absolute;
+  }
+  .participate{
+      font-size: 18px;
+      margin-top:25px;
+      padding-top:25px;
+      font-family: 'Julius Sans One', sans-serif;
+      color: #333333;
+      text-transform: uppercase;
+      z-index:6;
+    }
+
+
+  #bamboo{
+    width: 100%;
+    height: 1050px;
+
+  }
+  .partGreen{
+    width: 100%;
+    height: 718px;
+    background-image: url(../images/bamboo.png);
+    background-color: #BCD6C8;
+    padding-bottom: 10px;
+  }
+
+
+.require h4{
+    font-size: 18px;
+    margin: 31px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+}
+
+.low-Img{
+  position: relative;
+  margin-top:40px;
+  /*font-family: "verde moderna";*/
+  /*background-image: url("koi.jpg");*/
+  height:234px;
+  width:385px;
+  background-image: url("../images/koi_sm.jpg");
+  background-repeat: no-repeat;
+  z-index:0;
+}
+
+div.footer-caption{
+  text-align: center;
+  position: absolute;
+  color: rgba(255, 255, 255, .5);
+  font-size: 20px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-style: italic;
+  z-index: 4;
+  width: 100%;
+  line-height: 32px;
+  padding: 40px 22px 0;
+}
+
+
+span.white{
+  color: rgba(255, 255, 255, .7);
+  font-size: 20px;
+  font-family: 'Libre Baskerville', sans-serif;
+  z-index:4;
+  line-height: 40px;
+  font-style:normal;
+  }
+
+.green-block{
+  width:100%;
+  height:100px;
+  position: relative;
+  text-align: center;
+  background-color: #134347;
+  display: block;
+  z-index:5;
+  margin-top:-34px;
+  font-size:20px;
+  font-family: verdemoderna;
+  color: white;
+  }
+.verde {
+  margin-top:25px;
+        display: inline-block;
+        width:53px;
+        height:48px;
+        padding: 5px;
+        opacity: ;
+        text-decoration: none;
+        /*position: absolute;*/
+        z-index: 20;
+  		/*transition: color 0.25s ease-out, box-shadow 0.25s ease-out;*/
+}
+
+/*.verde::before {
+  content: "5";
+  display: block;
+      font-family: verdemoderna;
+      font-size: 60px;
+      color: white;
+      padding: 20px;
+      opacity: .7;
+      text-decoration: none;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}*/
+/*.green-block::before {
+    font-family: "verdemoderna";
+    font-size:36px;
+      /*content: "5";*/
+
+
+footer{
+  height: 500px;
+}
+.left{
+    background-color: #edf4f0;
+    display: block;
+    z-index:5;
+    float: left;
+    width: 50%;
+    height:80px;
+    border-top: solid 1px #d9e3dc;
+    color: #222222;
+    font-style: italic;
+}
+.bottom{
+    display: block;
+    z-index:5;
+    float: left;
+    width: 50%;
+    height:60px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+}
+.last{
+    display: block;
+    z-index:5;
+    float: left;
+    width: 100%;
+    height:60px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+}
+.last .footCap{
+  line-height: 16px;
+  /* text-align: left; */
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 23px;
+}
+.bottom .footCap{
+  line-height: 16px;
+/* text-align: left; */
+font-family: 'Julius Sans One', sans-serif;
+font-style: normal;
+font-size: 15px;
+margin-left: 23px;
+}
+.left .footCap{
+  line-height: 16px;
+/* text-align: left; */
+font-family: 'Julius Sans One', sans-serif;
+font-style: normal;
+font-size: 15px;
+margin-left: 23px;
+}
+
+.left .footCap .by{
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Libre Baskerville', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c0cac3;
+}
+.left .footCap .name{
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 20px;
+  color: #616857;
+  font-family: 'Libre Baskerville', sans-serif;
+
+}
+
+.partGreenBottom{
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/bamboo.png);
+  background-color: #BCD6C8;
+  padding-bottom: 0px;
+  position: absolute;
+  z-index:0;
+  margin-top:318px;
+  }
+}
+
+
+
+
+/*<!--//////////////////////////////////////////////-->*/
+@media (min-width: 420px) {
+
+  #headerImg{
+    background-image: url("../images/huntington-220-md.jpg");
+      position: relative;
+      margin-top: 0px;
+      /*display: block;*/
+      width:100%;
+      /*max-width:100%;*/
+      height: 235px;
+      z-index: 0;
+      background-repeat: no-repeat;
+  }
+
+  .transDiv{
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom:0;
+    z-index: 5;
+    width:100%;
+    height: 71px;
+  }
+
+  .insideHeader{
+    position: relative;
+    width:100%;
+    height:9px;
+  }
+  .logo-lg{
+      visibility: hidden;
+  }
+  h1{
+    right: 190px;
+    top: 30px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  h2{
+    top:52px;
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+    z-index:5
+  }
+  h3{
+    top:94px;
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;
+    position: absolute;
+    /*display: block;*/
+    color: rgba(255, 255, 255, .55);
+    font-size: 19px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    z-index:5;
+  }
+  h4{
+    font-size: 18px;
+    margin: 32px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+  img.arrow{
+    top: 187px;
+    right: 23px;
+    position: absolute;
+  }
+  h5{
+    font-size: 18px;
+    margin: 30px 34px 0px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+  .nav-button{
+    text-align: center;
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    color: rgba(255, 255, 255, .55);
+    font-size: 16px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    top: 120px;
+    z-index:5;
+    /*left: 120px;*/
+  }
+
+  .main{
+    position: relative;
+    margin:20px 0px 0;
+  }
+  p{
+    margin: 15px 34px 0px 40px;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #333333;
+    line-height: 23px;
+  }
+
+  .participate{
+      font-size: 18px;
+      margin-top:25px;
+      padding-top:25px;
+      font-family: 'Julius Sans One', sans-serif;
+      color: #333333;
+      text-transform: uppercase;
+      z-index:6;
+    }
+
+
+  #bamboo{
+    width: 100%;
+    height: 1050px;
+    background-image: url();
+  }
+
+
+  .partGreen{
+    width: 100%;
+    height: 690px;
+    background-image: url(../images/bamboo.png);
+    background-color: #BCD6C8;
+    padding-bottom: 10px;
+  }
+
+
+  .require h4{
+    font-size: 18px;
+    margin: 31px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+
+  .low-Img{
+      position: relative;
+      margin-top:40px;
+      /*font-family: "verde moderna";*/
+      /*background-image: url("koi.jpg");*/
+      width:100%;
+      height:170px;
+      background-image: url("../images/koi-md.jpg");
+      background-repeat: no-repeat;
+      z-index:0;
+  }
+
+  div.footer-caption{
+      text-align: center;
+      position: absolute;
+      color: rgba(255, 255, 255, .5);
+      font-size: 20px;
+      font-family: 'Libre Baskerville', sans-serif;
+      font-style: italic;
+      z-index: 4;
+      width: 100%;
+      line-height: 32px;
+      padding: 40px 42px 0;
+  }
+
+
+  span.white{
+      color: rgba(255, 255, 255, .7);
+      font-size: 20px;
+      font-family: 'Libre Baskerville', sans-serif;
+      z-index:4;
+      line-height: 40px;
+      font-style:normal;
+  }
+
+  .green-block{
+      width:100%;
+      height:100px;
+      text-align: center;
+      background-color: #134347;
+      display: inline-block;
+      z-index:5;
+      margin-top:-20px;
+      font-size:20px;
+      font-family: "verdemoderna";
+      color: white;
+      position: relative;
+  }
+  .verde {
+      margin-top:25px;
+      display: inline-block;
+      width:65px;
+      height:58px;
+      padding: 5px;
+      /*opacity: ;*/
+      text-decoration: none;
+      /*position: absolute;*/
+      z-index: 20;
+		/*transition: color 0.25s ease-out, box-shadow 0.25s ease-out;*/
+  }
+
+
+
+  /*.green-block::before {
+    font-family: "verdemoderna";
+    font-size:36px;
+      /*content: "5";*/
+
+
+  footer{
+  height: 500px;
+  }
+  .left{
+    background-color: #edf4f0;
+    display: block;
+    z-index:5;
+    float: left;
+    width: 50%;
+    height:80px;
+    border-top: solid 1px #d9e3dc;
+    color: #222222;
+    font-style: italic;
+  }
+  .bottom{
+    display: block;
+    z-index:5;
+    float: left;
+    width: 50%;
+    height:60px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+  }
+  .last{
+    display: block;
+    z-index:5;
+    float: left;
+    width: 100%;
+    height:60px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+  }
+  .last .footCap{
+  line-height: 16px;
+  /* text-align: left; */
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 23px;
+  }
+  .bottom .footCap{
+  line-height: 16px;
+  /* text-align: left; */
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 23px;
+  }
+  .left .footCap{
+  line-height: 16px;
+  /* text-align: left; */
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 23px;
+  }
+
+  .left .footCap .by{
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Libre Baskerville', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c0cac3;
+  }
+  .left .footCap .name{
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 20px;
+  color: #616857;
+  font-family: 'Libre Baskerville', sans-serif;
+
+  }
+
+  .partGreenBottom{
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/bamboo.png);
+  background-color: #BCD6C8;
+  padding-bottom: 0px;
+  position: absolute;
+  z-index:0;
+  margin-top:318px;
+
+  }
+}
+
+
+
+
+
+@media (min-width: 450px){
+.partGreen {
+    width: 100%;
+    height: 620;
+    background-image: url(../images/bamboo.png);
+    background-color: #BCD6C8;
+
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+@media (min-width: 640px){
+.partGreen {
+    width: 100%;
+    height: 490;
+    background-image: url(../images/bamboo.png);
+    background-color: #BCD6C8;
+
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (min-width: 768px){
+
+  .main{
+    position: relative;
+    margin:20px 0px 0;
+  }
+  p{
+    margin: 15px 34px 0px 40px;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #333333;
+    line-height: 23px;
+  }
+  .logo-lg{
+    visibility:hidden;
+  }
+  img.arrow{
+    top: 187px;
+    right: 23px;
+    position: absolute;
+  }
+  .participate{
+      font-size: 18px;
+      margin-top:25px;
+      padding-top:25px;
+      font-family: 'Julius Sans One', sans-serif;
+      color: #333333;
+      text-transform: uppercase;
+      z-index:6;
+    }
+  #bamboo{
+    width: 100%;
+    height: 1050px;
+    background-image: url();
+  }
+  .partGreen{
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/bamboo.png);
+    background-color: #BCD6C8;
+    padding-bottom: 30px;
+  }
+
+
+  .require h4{
+    font-size: 18px;
+    margin: 33px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+
+  .low-Img{
+      position: relative;
+      margin-top:40px;
+      /*font-family: "verde moderna";*/
+      /*background-image: url("koi.jpg");*/
+      width:100%;
+      height:170px;
+      background-image: url("../images/koi-md.jpg");
+      background-repeat: no-repeat;
+      z-index:0;
+  }
+
+  div.footer-caption{
+      text-align: center;
+      position: absolute;
+      color: rgba(255, 255, 255, .5);
+      font-size: 20px;
+      font-family: 'Libre Baskerville', sans-serif;
+      font-style: italic;
+      z-index: 4;
+      width: 100%;
+      line-height: 32px;
+      padding: 40px 42px 0;
+  }
+  span.white{
+      color: rgba(255, 255, 255, .7);
+      font-size: 20px;
+      font-family: 'Libre Baskerville', sans-serif;
+      z-index:4;
+      line-height: 40px;
+      font-style:normal;
+  }
+
+  .green-block{
+      width:100%;
+      height:100px;
+      text-align: center;
+      background-color: #134347;
+      display: block;
+      z-index:5;
+      margin-top:-34px;
+      font-size:20px;
+      font-family: "verdemoderna";
+      color: white;
+  }
+  /*.green-block::before {
+    font-family: "verdemoderna";
+    font-size:36px;
+      content: "5";
+  }*/
+
+  footer{
+  height: 500px;
+  }
+  .left{
+    background-color: #edf4f0;
+    display: block;
+    z-index:5;
+    float: left;
+    width: 50%;
+    height:80px;
+    padding-left: 90px;
+    border-top: solid 1px #d9e3dc;
+    color: #222222;
+    font-style: italic;
+  }
+  .bottom{
+    display: block;
+    z-index:5;
+    float: left;
+    width: 50%;
+    height:60px;
+    padding-left: 90px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+  }
+  .last{
+    display: block;
+    z-index:5;
+    float: left;
+    width: 100%;
+    height:60px;
+    padding-left: 90px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+  }
+  .last .footCap{
+    line-height: 16px;
+    /* text-align: left; */
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    margin-left: 23px;
+    }
+    .bottom .footCap{
+    line-height: 16px;
+    /* text-align: left; */
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    margin-left: 23px;
+  }
+  .left .footCap{
+  line-height: 16px;
+  /* text-align: left; */
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 23px;
+  }
+
+  .left .footCap .by{
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Libre Baskerville', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c0cac3;
+  }
+  .left .footCap .name{
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 20px;
+  color: #616857;
+  font-family: 'Libre Baskerville', sans-serif;
+
+  }
+
+.partGreenBottom{
+  width: 100%;
+  height: 180px;
+  /*background-image: url(../images/bamboo.png);*/
+  background-color: #BCD6C8;
+  padding-bottom: 0px;
+  position: absolute;
+  z-index:0;
+  margin-top:318px;
+  }
+}
+
+
+
+
+
+
+@media(min-width: 1150px) {
+
+  #container{
+    position:relative;
+    width:100%;
+    margin: 0 auto;
+  }
+
+  body{
+
+  }
+  #headerImg{
+    background-image: url("../images/huntington-lg.jpg");
+      position: relative;
+      margin-top: 0px;
+      /*display: block;*/
+      /*width:100%;*/
+      /*max-width:100%;*/
+      width: 100%;
+      height: 255px;
+      z-index: 0;
+      background-repeat: no-repeat;
+  }
+
+  .transDiv{
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom:0;
+    z-index: 5;
+    width:100%;
+    height: 71px;
+    display:none;
+  }
+
+  .insideHeader{
+    position: relative;
+    width:100%;
+    height:9px;
+  }
+
+
+  .logo-lg{
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      left: 115px;
+      top: 46px;
+      z-index: 7;
+      visibility: visible;
+
+  }
+    h1{
+        /*right: 190px;
+        top: 30px;
+        text-align: center;
+
+        width: 100%;
+        color: white;
+        font-size: 30px;
+        font-family: 'Julius Sans One', sans-serif;
+        background-image: url('images/enso-md.png');*/
+        display:none;
+      }
+
+    h2{
+      top: 70px;
+      left: 290px;
+      text-align: left;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      color: white;
+      font-size: 50px;
+      font-family: 'Julius Sans One', sans-serif;
+      z-index: 5;
+    }
+    h3{
+      top: 130px;
+      left: 291px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      position: absolute;
+      /* display: block; */
+      color: rgba(255, 255, 255, .55);
+      font-size: 26px;
+      font-family: 'Libre Baskerville', sans-serif;
+      font-style: italic;
+      z-index: 5;
+    }
+  h4{
+    font-size: 30px;
+    margin: 32px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+  h5{
+    font-size: 30px;
+    margin: 30px 34px 0px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+  .nav-button{
+    text-align: left;
+    /*position: absolute;*/
+    padding-top: 28px;
+    padding-left: 24px;
+    font-size: 17px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    top: 0px;
+    right: 102px;
+    color: white;
+    z-index: 55;
+    width: 240px;
+    height: 70px;
+    background: rgba(255, 255, 255, .15);
+    color: rgba(255, 255, 255, .5);
+  }
+  .nav-button:hover{
+    background-color: rgba(255, 255, 255, .3);
+  }
+  .nav-button-sq:hover{
+    background-color: rgba(255, 255, 255, .3);
+  }
+
+
+  /*.nav-button-sq a:;before{
+      content: ">";
+    }*/
+  .nav-button-sq{
+      text-align: center;
+      position: absolute;
+      padding-top: 28px;
+      /* padding: 26px 59px 35px 25px; */
+      /* margin: -10px 10; */
+      font-size: 17px;
+      font-family: 'Julius Sans One', sans-serif;
+      text-transform: uppercase;
+      top: 80px;
+      right: 27px;
+      color: white;
+      z-index: 50;
+      /* left: 120px; */
+      width: 70px;
+      height: 70px;
+      background: rgba(255, 255, 255, .15);
+      color: rgba(255, 255, 255, .5);
+}
+img.arrow{
+  top: 16px;
+  right: 18px;
+  position: absolute;
+
+}
+  .main{
+    position: relative;
+    margin:20px 0px 0;
+    width: 66%;
+    padding: 20px 10px 0 20px;
+  }
+  p{
+    margin: 15px 34px 0px 40px;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #333333;
+    line-height: 30px;
+  }
+
+  .participate{
+      font-size: 30px;
+      margin-top: 25px;
+      margin-left: 0px;
+      font-family: 'Julius Sans One', sans-serif;
+      color: #333333;
+      text-transform: uppercase;
+      z-index:6;
+      padding: 10px 0 0 39px;
+    }
+  #bamboo{
+    width: 100%;
+    height: 1050px;
+  }
+  .partGreen{
+    width: 100%
+    height: 760px;
+    background-image: url(../images/bamboo.png);
+    background-color: #BCD6C8;
+    padding: 20px 10px 0px 20px;
+    margin-top: 60px;
+    margin-bottom: 59px;
+    margin-bottom: 59px;
+    height: 760px;
+}
+.partGreenSection{
+    /*margin: 20px 0px 0;*/
+    width: 58%;
+    /*padding: 20px 10px 0 20px;*/
+  }
+  .require{
+    width:66%;
+    padding-left: 20px;
+  }
+  .require h4{
+    font-size: 30px;
+    margin: 33px 34px 10px 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    z-index:6;
+  }
+
+  .low-Img {
+      position: relative;
+      /* margin-top: 49px; */
+      top: 20px;
+      /* font-family: "verde moderna"; */
+      /* background-image: url(koi.jpg); */
+      width: 100%;
+      height: 270px;
+      background-image: url(../images/koi-md-2.jpg);
+      background-repeat: no-repeat;
+      z-index: 1;
+  }
+
+  div.footer-caption{
+      text-align: center;
+      position: absolute;
+      color: rgba(255, 255, 255, .5);
+      font-size: 30px;
+      font-family: 'Libre Baskerville', sans-serif;
+      font-style: italic;
+      z-index: 4;
+      width: 100%;
+      line-height: 53px;
+      padding: 48px 175px 0;
+  }
+
+
+  span.white{
+      color: rgba(255, 255, 255, .7);
+      font-size: 30px;
+      font-family: 'Libre Baskerville', sans-serif;
+      z-index:4;
+      line-height: 40px;
+      font-style:normal;
+  }
+
+  .green-block{
+      width:100%;
+      height:125px;
+      text-align: center;
+      background-color: #134347;
+      display: block;
+      z-index:5;
+      margin-top:-34px;
+      font-size:20px;
+      font-family: "verdemoderna";
+      color: white;
+  }
+  .verde{
+      margin:22px 20px 20px 0;
+      display: inline-block;
+      width:90;
+      height:85;
+      padding: 5px;
+      /*opacity: ;*/
+      text-decoration: none;
+      /*position: absolute;*/
+      z-index: 20;
+		/*transition: color 0.25s ease-out, box-shadow 0.25s ease-out;*/
+  }
+
+  /*.green-block::before {
+    font-family: verdemoderna;
+    font-size:36px;
+      content: "5";
+  }*/
+
+.bottom{
+    /*display: block;*/
+    float: left;
+    width: 58%;
+    height: 60px;
+    z-index: 5;
+    height: 60px;
+    border-top: solid 1px #a0b9ad;
+    color: #222222;
+    font-style: italic;
+    padding: 10 0 0 0px;
+}
+.last{
+  z-index: 5;
+  float: left;
+  width: 58%;
+  height: 60px;
+  border-top: solid 1px #a0b9ad;
+  color: #222222;
+  font-style: italic;
+  margin-left: 0px;
+  padding: 10 0 0 0px;
+  color: #607476;
+}
+.last .footCap{
+  line-height: 16px;
+  /* text-align: left; */
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  margin-left: 4px;
+  color: #607476;
+}
+.bottom .footCap{
+  line-height: 16px;
+/* text-align: left; */
+font-family: 'Julius Sans One', sans-serif;
+font-style: normal;
+font-size: 22px;
+margin-left: 2px;
+width: 290px;
+color: #607476;
+}
+.left .footCap{
+  line-height: 21px;
+  text-align: left;
+  font-family: 'Julius Sans One', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  margin-left: 0px;
+  color: #607476;
+}
+
+.left .footCap .by{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 20px;
+    color: #c0cac3;
+}
+.left .footCap .name{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    line-height: 20px;
+    color: #616857;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+  footer{
+      right: 0;
+      right: 0;
+      top: 322px;
+      position: absolute;
+  }
+  .partGreenBottom{
+        width: 50%;
+        height: 182px;
+        position: absolute;
+        float: right;
+        top: 691px;
+        left: 60px;
+        color: #607476;
+        background-color: rgba(5,5,5,0);
+        background-image: url();
+
+}
+  .left {
+      float: right;
+      color: #607476;
+      clear: both;
+      height: 119px;
+      margin-left: 83px;
+      margin-top: -28px;
+      width: 85%;
+      padding: 10px 0 70px 7px;
+      padding-left: -25px;
+      background-color: rgba(255, 0, 0,0);
+  }
+/*.bottom,.last, .greenBottom, .left, .partGreenBottom{
+  visibility: hidden;
+}*/
+
+.right-split{
+      width:34%;
+      background-color: rgba(158, 184, 171, .15);
+      height: 2826px;
+      /*float:right;*/
+      top:0;
+      right:0;
+      position: absolute;
+      z-index:0;
+  }
+}
+
+@media(min-width: 1200px) {
+
+
+  .partGreenBottom{
+        width: 147%;
+        height: 182px;
+        position: absolute;
+        float: right;
+        top: 661px;
+        left: 60px;
+        color: #607476;
+        background-color: rgba(5,5,5,0);
+}
+.right-split{
+      width:34%;
+      background-color: rgba(158, 184, 171, .15);
+      height: 2726px;
+      /*float:right;*/
+      top:0;
+      right:0;
+      position: absolute;
+      z-index:0;
+  }
+}
+
+
+@media(min-width: 1250px) {
+
+
+  .partGreenBottom{
+        width: 145%;
+        height: 182px;
+        position: absolute;
+        float: right;
+        top: 633px;
+        left: 60px;
+        color: #607476;
+        background-color: rgba(5,5,5,0);
+        background-image: url();
+
+}
+.right-split{
+      width:31%;
+      background-color: rgba(158, 184, 171, .2);
+      height: 2734px;
+      /*float:right;*/
+      top:0;
+      right:0;
+      position: absolute;
+      z-index:0;
+  }
+}

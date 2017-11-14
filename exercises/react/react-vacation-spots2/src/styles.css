@@ -1,0 +1,19 @@
+.header{
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:60px;
+    background-color: #8de7e4;
+    text-align: center;
+}
+
+
+
+.footer{
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:100px;
+    background-color: #8de7e4;
+    text-align: center;
+}

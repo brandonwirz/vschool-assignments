@@ -55,6 +55,7 @@ function startGame () {
   displayBattle();
 }
 battle(0, 9);
+
  while (!false) {
   startGame();
 }
