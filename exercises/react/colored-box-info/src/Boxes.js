@@ -11,42 +11,13 @@ function Boxes() {
             info:"information1",
             backgroundColor:"rgb(219, 209, 226)",
           },
-          // {
-          //   title:"title 2",
-          //   subtitle:" subtitle 2",
-          //   info:"information 2",
-          //   backgroundColor:"rgb(176, 147, 196)",
-          // },
-          // {
-          //   title:"title 3",
-          //   subtitle:" subtitle3",
-          //   info:"information 3",
-          //   backgroundColor:"rgb(125, 154, 131)",
-          // },
-          // {
-          //   title:"title 2",
-          //   subtitle:" subtitle 2",
-          //   info:"information 2",
-          //   backgroundColor:"rgb(176, 147, 196)",
-          // },
-          // {
-          //   title:"title 3",
-          //   subtitle:" subtitle3",
-          //   info:"information 3",
-          //   backgroundColor:"rgb(125, 154, 131)",
-          // },
-          // {
-          //   title:"title 2",
-          //   subtitle:" subtitle 2",
-          //   info:"information 2",
-          //   backgroundColor:"rgb(176, 147, 196)",
-          // },
-          // {
-          //   title:"title 3",
-          //   subtitle:" subtitle3",
-          //   info:"information 3",
-          //   backgroundColor:"rgb(125, 154, 131)",
-          // },
+          {
+            title:"title 2",
+            subtitle:" subtitle 2",
+            info:"information 2",
+            backgroundColor:"rgb(176, 147, 196)",
+          }
+
         ]
 
           const boxesJSX1 = boxes.map((box)=>{

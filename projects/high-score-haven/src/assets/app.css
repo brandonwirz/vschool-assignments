@@ -1,0 +1,36 @@
+body{
+
+}
+
+.header{
+    list-style:none;
+    height:80px;
+    background-color: #666666;
+    text-align: center;
+}
+
+h3{
+  height:0px;
+  font-size: 16px;
+  text-align: center;
+  color:white;
+}
+
+table {
+  margin-top:10px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {
+  border: 1px solid rgb(38, 37, 33);
+  text-align: left;
+  padding: 8px;
+  background-color: rgba(27, 161, 231, .1);
+}

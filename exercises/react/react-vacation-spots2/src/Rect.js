@@ -6,15 +6,15 @@ import React from "react";
            background: `url(${props.imgURL}) no-repeat center`,
            backgroundSize: `cover`
        }
-    // const {backgroundColor, title, subTitle, info} =props;
+   // const {backgroundColor, title, subTitle, info} =props;
     const styles ={
         rect:{
             backgroundColor:props.backgroundColor,
             // border: "solid black 2px",
             width: "15%",
-            height: "300px",
+            height: "220px",
             display:"inline-block",
-            verticleALign: "top",
+            verticleAlign: "top",
             position:"relative",
             padding: "10px"
         },
@@ -32,7 +32,7 @@ import React from "react";
           <h2>{props.location}</h2>
           <h4>{props.subTitle}</h4>
           <h4>{props.price}</h4>
-          <div>{props.imgUrl}</div>
+          <img src={props.src}/>
           <div>{props.timeToGo}</div>
           <div style ={styles.info}>
               <p>{props.info}</p>
@@ -44,11 +44,6 @@ import React from "react";
 
       )
 }
-// location = {box.location}
-// // subTitle={box.subTitle}
-// price ={box.price}
-// timeToGo={box.timeToGo}
-// backgroundColor={box.backgroundColor}
-// info={box.info}
+
 
 export default Rect;

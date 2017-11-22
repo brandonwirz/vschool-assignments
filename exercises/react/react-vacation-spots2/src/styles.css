@@ -1,9 +1,19 @@
+.boxes{
+  margin: 0 auto;
+  display: inline-block;
+}
+img{
+  width:120px;
+  height:112;
+}
+
+
 .header{
     margin:0;
     padding:0;
     list-style:none;
     height:60px;
-    background-color: #8de7e4;
+    background-color: #d8dfd8;
     text-align: center;
 }
 
@@ -14,6 +24,6 @@
     padding:0;
     list-style:none;
     height:100px;
-    background-color: #8de7e4;
+    background-color: #d8dfd8;
     text-align: center;
 }

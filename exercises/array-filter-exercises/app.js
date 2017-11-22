@@ -11,11 +11,11 @@ console.log(numFilter([3, 6, 8, 2])); // [6, 8]
 
 //2) Filter all numbers out of the array that are odd
 const evensOnly = function(arr) {
-    const evenSkimmer = arr.filter((num) => {
+    const evenSkim = arr.filter((num) => {
         return num % 2 === 0;// %(modulo)
         return num % 3 === 0;// %(modulo)
     });
-    return evenSkimmer;
+    return evenSkim;
 };
 console.log(evensOnly([3, 6, 8, 2])); // [6, 8, 2]
 console.log(evensOnly([3, 6, 8, 2])); // [3, 6]

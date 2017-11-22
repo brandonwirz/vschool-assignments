@@ -15,8 +15,7 @@ function App() {
                 <div><Header/></div>
                 <div className="Boxes"><Boxes/></div>
                 <div><Footer/></div>
-
-      </div>
+        </div>
 
 
   )

@@ -1,0 +1,39 @@
+.container, #root{
+  margin: 0 auto;
+  width: 800px;
+}
+
+body{
+  background-color: #070707;
+  width: 1200px;
+  height:1000px
+}
+
+.title{
+    z-index: 22;
+    margin-left: 220px;
+    color: rgb(156, 14, 5);
+    font-size: 30px;
+    top: 275px;
+    position: absolute;
+}
+
+
+.last {
+  z-index:23;
+  color: white;
+  line-height:32px;
+  margin-left: 222px;
+  color:rgb(213, 210, 214);
+  font-size: 23px;
+  margin-top:0px;
+
+}
+.images{
+  z-index: 55;
+  position: absolute;
+  width: 40px;
+  padding:10px;
+  border-radius: 50px;
+
+}

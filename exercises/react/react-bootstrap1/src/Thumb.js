@@ -20,7 +20,6 @@ function Thumb(props) {
           </p>
           </Thumbnail>
           </Col>
-
     )
 };
 

@@ -48,7 +48,7 @@ function replace(){
 ////---slice()---////
 var str = "They ran all night long!";
 function slice(){
-  var returned = str.slice(1, 20)
+  var returned = str.slice(20)
   return returned;
 }
 console.log(slice());
@@ -65,31 +65,21 @@ console.log(match(str));
 ////---split()---////
 function splitString(){
 var str = "The year was 2011.";
-var splitted = str.split(" ",2);
+var splitted = str.split(" ",2).join(" ");
 
   console.log(splitted.toString());
 }
 console.log(splitString());
 
 
-var str = 'Hi,How,are,you?';
-
-function splitString(){
-  var returned = str.split(" ");
-  return returned;
-}
-console.log(str);
-
-
-function splitString(){
-  var str = 'Hi How are you?';
-  var splitted = str.split(', ');
-  return splitted.join();
-}
-str.split(returned);
-splitString()
-console.log(splitString());
-console.log(returned);
+// var str = 'Hi,How,are,you?';
+//
+// function splitString(){
+//   var returned = str.split(" ");
+//   returned.join()
+//   return returned;
+// }
+// splitString(returned);
 
 
 ////---toLowerCase()---////
@@ -116,3 +106,7 @@ function subString(dog){
   return dog.substr(dog.length / 2);
 }
 subString("Rottytotty");
+
+
+
+return dog.substr(dog.length /2)

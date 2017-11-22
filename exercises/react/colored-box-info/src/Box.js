@@ -4,7 +4,8 @@ import React from "react";
 // function Box({backgroundColor, title, subTitle, info}){
   function Box(props){
 
-    const {backgroundColor, title, subTitle, info} = props;
+    // const {backgroundColor, title, subTitle, info} = props;
+
     const styles ={
         box:{
             backgroundColor:props.bgColor,
@@ -12,7 +13,7 @@ import React from "react";
             width: "20%",
             height: "300px",
             display:"inline-block",
-            verticleALign: "top",
+            verticleAlign: "top",
             position:"relative",
             padding: "10px"
         },

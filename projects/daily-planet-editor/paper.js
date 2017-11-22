@@ -45,4 +45,6 @@ while (clarkKent){
     if (phoneBoothQuickChange >= 0.5) {
         clarkKent = false;
         superman = true;
-        console.log("Now I'm Superman!");}}
+        console.log("Now I'm Superman!");
+    }
+}

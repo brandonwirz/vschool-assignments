@@ -154,7 +154,7 @@
   }
   .partGreen{
     width: 100%;
-    height: 718px;
+    height: 808px;
     background-image: url(../images/bamboo.png);
     background-color: #BCD6C8;
     padding-bottom: 10px;
@@ -192,7 +192,7 @@ div.footer-caption{
   z-index: 4;
   width: 100%;
   line-height: 32px;
-  padding: 40px 22px 0;
+  padding: 26px 22px 0;
 }
 
 
@@ -472,7 +472,7 @@ margin-left: 23px;
 
   .partGreen{
     width: 100%;
-    height: 690px;
+    height: 756px;
     background-image: url(../images/bamboo.png);
     background-color: #BCD6C8;
     padding-bottom: 10px;
@@ -653,7 +653,7 @@ margin-left: 23px;
 @media (min-width: 450px){
 .partGreen {
     width: 100%;
-    height: 620;
+    height: 723;
     background-image: url(../images/bamboo.png);
     background-color: #BCD6C8;
 
@@ -753,7 +753,7 @@ margin-left: 23px;
       z-index: 4;
       width: 100%;
       line-height: 32px;
-      padding: 40px 42px 0;
+      padding: 28px 42px 0;
   }
   span.white{
       color: rgba(255, 255, 255, .7);
