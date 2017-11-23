@@ -2,9 +2,11 @@ import React from "react";
 
 function Header() {
     return (
+      <div className="container">
         <div className="header">
-          <h3>High Score Haven</h3>
+          <h1>High Score Haven</h1>
         </div>
+      </div>
     )
 };
 

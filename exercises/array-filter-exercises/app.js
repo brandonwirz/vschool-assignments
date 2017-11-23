@@ -1,3 +1,5 @@
+//The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
 //1) Filter all numbers out of the array that are less than 5
 const numFilter = function(arr)  {
     const fiveAndGreaterOnly = arr.filter((num) => {

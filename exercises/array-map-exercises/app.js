@@ -1,3 +1,4 @@
+//The map() method creates a new array with the results of calling a function for every array element.
 
 // 1) Make an array of numbers that are doubles of the first array
 function doubleNumbers(arr){

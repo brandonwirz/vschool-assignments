@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Output from "./Output.js";
-import Form from "./Form.js"
+import Form from "./Form.js";
 
 class Container extends Component {
     constructor() {
@@ -19,12 +19,27 @@ class Container extends Component {
   }
 
   render() {
-    return (<div>
-      <Form submit={this.handleSubmit}/> {
-            this.state.forms.map(form => {
-                return (<Output name={form.name} game={form.game} date={form.date} score={form.score} trashTalk={form.trashTalk}/>)
-        })
-      }
+    return (
+        <div>
+
+        <Form submit={this.handleSubmit}/>
+        <div className="tableDiv">
+
+           <table>
+             <tr>
+               <th>Name</th>
+               <th>Game</th>
+               <th>Date</th>
+               <th>High Score</th>
+            </tr>
+            <tbody>
+        {this.state.forms.map((form, i) => {
+                  return (<Output name={form.name} game={form.game} key={form + i} date={form.date} score={form.score} trashTalk={form.trashTalk}/>)
+            })
+          }
+          </tbody>
+        </table>
+      </div>
     </div>
    )
   }

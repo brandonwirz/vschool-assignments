@@ -11,6 +11,7 @@ class Form extends Component{
           highScore: "",
           trashTalk: "",
           trashTalkArray: ['Nice job dummy!', 'Try again bozoo!', 'Your a real buffoon']
+
         }
           this.handleInputsChange = this.handleInputsChange.bind(this)
     }
@@ -34,6 +35,19 @@ class Form extends Component{
           return this.state.trashTalkArray[index];
         }
 
+        // addData(){
+        //     let name = document.getElementById('name').value;
+        //     let game = document.getElementById('game').value
+        //     let date = document.getElementById('date').value
+        //     let score = document.getElementById('score').value
+        // }
+        //    {this.state.rows.map(row => <tr></tr>)}
+
+           // addRow(){
+           //   var nextState = this.state;
+           //   nextState.rows.push("forms");
+           //   this.setState(nextState);
+           // }
 
     render(){
           const block = {
@@ -46,30 +60,28 @@ class Form extends Component{
                   <form onSubmit= {(e)=>this.props.submit(e, this.state)}>
 
                       Name:
-                      <input style={block} name="name" onChange={this.handleInputsChange} value= {this.state.name}/>
+                      <input style={block} name="name" required onChange={this.handleInputsChange} value= {this.state.name}/>
 
                       Game:
-                      <input style={block} name="game"  onChange={this.handleInputsChange} value= {this.state.game}/>
+                      <input style={block} name="game" onChange={this.handleInputsChange} value= {this.state.game}/>
 
                       Date:
                       <input style={block} name="date" onChange={this.handleInputsChange} value= {this.state.date}/>
 
                       High Score:
-                      <input style={block} name="score"  minLength="2" onChange={this.handleInputsChange} value= {this.state.score}/>
-
-                      Random Trash Talking Message
-                      <input style={block} name="trashTalk" type="checkBox" key="trashTalk" onChange={this.handleInputsChange} value={this.state.trashTalkArray}/>
+                      <input style={block} name="score" minLength="2" onChange={this.handleInputsChange} value= {this.state.score}/>
+                      <br/>
+                      Include a Random Trash Talking Message?
+                      <input style={block} name="trashTalk" type="checkBox" onChange={this.handleInputsChange} value={this.state.trashTalkArray}/>
+                      <br/>
 
                       <button>submit</button>
+                    
+
                   </form>
+
+
               </div>
-
-
-              /* <div>
-                  <form reset= {(e)=>this.props.reset(e, this.state)}>
-                  <button>reset</button></form>
-              </div> */
-
 
           )
      }
