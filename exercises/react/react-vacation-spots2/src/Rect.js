@@ -12,7 +12,7 @@ import React from "react";
             backgroundColor:props.backgroundColor,
             // border: "solid black 2px",
             width: "15%",
-            height: "220px",
+            height: "350px",
             display:"inline-block",
             verticleAlign: "top",
             position:"relative",
@@ -20,27 +20,28 @@ import React from "react";
         },
         info:{
             overflow: "auto",
-            height:"70px",
+            height:"90px",
             bottom:"39px",
             position:"absolute"
-      }
+      },
+
 
 }
     return(
-
-      <div style ={styles.rect}>
-          <h2>{props.location}</h2>
-          <h4>{props.subTitle}</h4>
-          <h4>{props.price}</h4>
-          <img src={props.src}/>
-          <div>{props.timeToGo}</div>
-          <div style ={styles.info}>
-              <p>{props.info}</p>
-          </div>
-          <div style={images}>
-
-          </div>
-      </div>
+      // <div style={styles.section}>
+          <div style ={styles.rect}>
+              <h2>{props.location}</h2>
+                  <h4>{props.subTitle}</h4>
+                    <h4>{props.price}</h4>
+                      <img src={props.src}/>
+                    <div>{props.timeToGo}</div>
+                    <div style ={styles.info}>
+                  <p>{props.info}</p>
+                  </div>
+                  <div style={images}>
+              </div>
+            </div>
+      // </div>
 
       )
 }

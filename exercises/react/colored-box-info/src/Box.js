@@ -10,8 +10,8 @@ import React from "react";
         box:{
             backgroundColor:props.bgColor,
             border: "solid black 2px",
-            width: "20%",
-            height: "300px",
+            width: "8%",
+            height: "auto",
             display:"inline-block",
             verticleAlign: "top",
             position:"relative",

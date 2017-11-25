@@ -13,7 +13,9 @@ function App() {
     return (
         <div className="containerDiv">
                 <div><Header/></div>
-                <div className="Boxes"><Boxes/></div>
+                <div className="section">
+                    <div className="Boxes"><Boxes/></div>
+                </div>
                 <div><Footer/></div>
         </div>
 

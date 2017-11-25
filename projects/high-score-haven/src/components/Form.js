@@ -35,19 +35,6 @@ class Form extends Component{
           return this.state.trashTalkArray[index];
         }
 
-        // addData(){
-        //     let name = document.getElementById('name').value;
-        //     let game = document.getElementById('game').value
-        //     let date = document.getElementById('date').value
-        //     let score = document.getElementById('score').value
-        // }
-        //    {this.state.rows.map(row => <tr></tr>)}
-
-           // addRow(){
-           //   var nextState = this.state;
-           //   nextState.rows.push("forms");
-           //   this.setState(nextState);
-           // }
 
     render(){
           const block = {
@@ -56,9 +43,7 @@ class Form extends Component{
 
         return(
               <div className="form">
-
                   <form onSubmit= {(e)=>this.props.submit(e, this.state)}>
-
                       Name:
                       <input style={block} name="name" required onChange={this.handleInputsChange} value= {this.state.name}/>
 
@@ -74,15 +59,9 @@ class Form extends Component{
                       Include a Random Trash Talking Message?
                       <input style={block} name="trashTalk" type="checkBox" onChange={this.handleInputsChange} value={this.state.trashTalkArray}/>
                       <br/>
-
                       <button>submit</button>
-                    
-
                   </form>
-
-
               </div>
-
           )
      }
 }

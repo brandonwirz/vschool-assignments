@@ -37,6 +37,7 @@ class Container extends Component {
                   return (<Output name={form.name} game={form.game} key={form + i} date={form.date} score={form.score} trashTalk={form.trashTalk}/>)
             })
           }
+
           </tbody>
         </table>
       </div>

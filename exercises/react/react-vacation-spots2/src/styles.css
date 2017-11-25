@@ -1,13 +1,23 @@
+.containerDiv{
+    position: relative;
+    width:900px;
+}
+
 .boxes{
   margin: 0 auto;
   display: inline-block;
 }
 img{
-  width:120px;
-  height:112;
+  width:70px;
+  height:auto;
+  position: relative;
 }
-
-
+h2{
+  font-size: 20px;
+}
+p{
+  position: relative;
+}
 .header{
     margin:0;
     padding:0;
@@ -17,10 +27,14 @@ img{
     text-align: center;
 }
 
-
-
+.section{
+  margin: 0 auto;
+  /*width: 100%;*/
+  position: relative;
+  text-align: left;
+}
 .footer{
-    margin:0;
+    margin-top:50px;
     padding:0;
     list-style:none;
     height:100px;
