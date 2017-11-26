@@ -10,6 +10,7 @@ function Todo(props) {
               <td>{props.info.price}</td>
               <td>{props.info.imgURL}</td>
               <button onClick={props.delete}>x</button>
+              <button onClick={props.post}>Add Todo</button>
            </tr>
     )
 }
