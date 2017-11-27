@@ -29,16 +29,16 @@ import React from "react";
 }
     return(
       // <div style={styles.section}>
-          <div style ={styles.rect}>
+              <div style ={styles.rect}>
               <h2>{props.location}</h2>
-                  <h4>{props.subTitle}</h4>
-                    <h4>{props.price}</h4>
-                      <img src={props.src}/>
-                    <div>{props.timeToGo}</div>
-                    <div style ={styles.info}>
-                  <p>{props.info}</p>
-                  </div>
-                  <div style={images}>
+              <h4>{props.subTitle}</h4>
+              <h4>{props.price}</h4>
+              <img src={props.src}/>
+              <div>{props.timeToGo}</div>
+              <div style ={styles.info}>
+              <p>{props.info}</p>
+              </div>
+              <div style={images}>
               </div>
             </div>
       // </div>

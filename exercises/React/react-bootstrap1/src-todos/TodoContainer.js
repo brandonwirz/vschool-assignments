@@ -97,12 +97,5 @@ class TodoContainer extends Component{
         )
     }
 }
-{/* <TodoItem
-  //dont need to call props because class pass down//
-  todo = {this.props.todo}
-  deleteTodo = {this.props.deleteTodo}
-  editedTodo = {this.state.editedTodo}
-  handleEdit = {this.handleEdit}
-  handleSubmit = {this.handleSubmit}
-/> */}
+
 export default TodoContainer;

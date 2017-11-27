@@ -1,25 +1,28 @@
 import React ,{Component} from "react"
 import axios from "axios"
+import Person from "./Person"
 
 
 class App extends Component{
-  constructor(){
-    super();
-    this.state ={
-      todo: []
+    constructor(){
+      super()
+      this.state ={
+        people: []
+      }
     }
-  }
+      //promise
+    componentDidMount(){                              //callback function
+          axios.get("https://swapi.co/api/people").then((response)=>{
+            // const names = response.data.results.map(person=>person.name)
+            this.setState({people: response.data.results})
+            // this.setState({people: response.data.results})
+          })
+    }
 
-  ComponentDidMount(){
-      axios.get("https://api.school.io/ericnatejones/todo").then((response)=>{
-        //console.log(response)
-        this.setState({todos: response.data})
-        // let data = response.data;
-      })
-  }
     render(){
-        return <h1>hello</h1>
-  }
+      return this.state.people.map((person, i)=>{
+          return <Person info={person} key={person.name + i}/>
+        })
+    }
 }
-
 export default App;
