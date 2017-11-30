@@ -1,38 +1,74 @@
 import React, {Component} from "react";
+import axios from "axios";
 
+import {ListGroupItem} from "react-bootstrap"
 
+class Todo extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            completed: props.info.completed,
+            title: props.info.title,
+            description: props.info.description,
+            isEditVisable: false
 
-function Todo(props) {
-    return(
-        <table>
-             <tr>
-                <td>{props.info.title}</td>
-                <td>{props.info.description}</td>
-                <td>{props.info.price}</td>
-                <td>{props.info.imgURL}</td>
-                <button onClick={()=>props.delete(props.info._id)}>x</button>
-                <button onClick={props.put}>edit</button>
-             </tr>
-         </table>
-    )
+        }
+
+        this.update = this.update.bind(this);
+        this.toggleCompleted = this.toggleCompleted.bind(this);
+        this.edit = this.edit.bind(this);
+    }
+
+    toggleCompleted(){
+        axios.put('https://api.vschool.io/brandonwirz/todo/' + this.props.info._id , {completed: !this.state.completed})
+        .then(response=>{
+            this.setState({completed: response.data.completed})
+        })
+    }
+
+    update(e){
+        e.preventDefault()
+        axios.put('https://api.vschool.io/brandonwirz/todo/' + this.props.info._id, {title: this.state.title, description: this.state.description})
+        .then(response=>{
+            this.setState({isEditVisable: false})
+        })
+    }
+
+    updateInputs = (e)=>{
+        this.setState({[e.target.name]: e.target.value})
+    }
+
+    edit(){
+        this.setState(prevState=>{
+            return {isEditVisable: !prevState.isEditVisable}
+        })
+    }
+
+    render(){
+        const {title, description, imgURL, price, completed, _id} = this.props.info;
+        const lineThrough = {
+                textDecoration: "line-through",
+                color: "rgba(162, 86, 105, 0.3)"
+        }
+        return (
+            <div>
+
+                {!this.state.isEditVisable ? <div>
+                    <h3 name="title" style={ this.state.completed ? lineThrough : null }>{this.state.title}</h3>
+                    <h5>{this.state.description}</h5>
+                    <button id={_id} onClick={this.props.delete}>Delete</button>Completed?
+                    <input onChange={this.toggleCompleted} type="checkbox" checked={this.state.completed}/>
+                </div>
+                :
+                <form onSubmit={this.update}>
+                    <div><input name="title" onChange={this.updateInputs} placeholder="click here to edit title" value={this.state.title}/></div>
+                    <div><input name="description" onChange={this.updateInputs} placeholder="click here to edit description" value={this.state.description}/></div>
+                    <button> save </button>
+                </form>}
+                <button onClick={this.edit}>edit</button>
+            </div>
+        )
+    }
 }
 
 export default Todo;
-
-
-// { <div >
-//     <h1>{props.todo.title}</h1>
-//     <h2>{props.todo.description}</h2>
-//     <button onClick= {() => props.deleteTodo(props.todo._id)}> Delete </button>
-//   <div>
-//     <button onClick={props.post}>Add Todo</button>
-//
-//     <form onSubmit = {props.handleSubmit}>
-//       <input onChange = {props.handleEdit} name="title" value ={props.editedTodo.title} type="text" placeholder = "Edit Title"/>
-//
-//       <input onChange = {props.handleEdit} name ="description" value ={props.editedTodo.description} type="text" placeholder = "Edit Description"/>
-//       <button type="submit">Save</button>
-//     </form>
-//   </div>
-//   <hr/>
-// </div> }

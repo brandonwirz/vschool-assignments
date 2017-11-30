@@ -3,7 +3,7 @@
 // 1) Make an array of numbers that are doubles of the first array
 function doubleNumbers(arr){
   var doubledArr = [];
-  for(var i =0; i < arr.length; i++){
+  for(var i = 0; i < arr.length; i++){
     doubledArr.push(arr[i]* 2)
   }
   return doubledArr;
@@ -29,7 +29,7 @@ console.log(doubleNumbers([2, 5, 100]));
 //2) Take an array of numbers and make them strings
 function stringItUp(arr){
   // return arr.map(String);
-   return arr.map(num => num.toString())
+   return arr.map((num) => (num.toString()))
 }
 console.log(stringItUp([2, 5, 100]));
 

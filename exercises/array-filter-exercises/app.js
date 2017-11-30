@@ -1,26 +1,26 @@
-//The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+//The filter() method creates a new array with all elements that
+//pass the test implemented by the provided function.
 
 //1) Filter all numbers out of the array that are less than 5
-const numFilter = function(arr)  {
-    const fiveAndGreaterOnly = arr.filter((num) => {
-        return num >= 5;
+const numFilter = function(arr){
+    const greaterThanFive = arr.filter((num)=>{
+      return num >= 5
     });
-    return fiveAndGreaterOnly;
-};
+    return greaterThanFive
+}
 
-console.log(numFilter([3, 6, 8, 2])); // [6, 8]
+console.log(numFilter([3, 6, 8, 2, 1, 0, 12])); //
 
 
 //2) Filter all numbers out of the array that are odd
 const evensOnly = function(arr) {
     const evenSkim = arr.filter((num) => {
-        return num % 2 === 0;// %(modulo)
-        return num % 3 === 0;// %(modulo)
+        return num % 2 === 0;
     });
     return evenSkim;
 };
-console.log(evensOnly([3, 6, 8, 2])); // [6, 8, 2]
-console.log(evensOnly([3, 6, 8, 2])); // [3, 6]
+console.log(evensOnly([3, 6, 8, 2]));
+
 
 
 //3) Filter all strings out of the array that are less than 5 characters long

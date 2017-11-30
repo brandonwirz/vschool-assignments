@@ -25,13 +25,11 @@ class TodoForm extends Component{
     }
 
     submitForm(e){
-        e.preventDefault()
-        this.props.addTodo(this.state);
+        e.preventDefault();
+        this.props.addTodo(this.state)
     }
 
     render(){
-
-
         return (
             <Form onSubmit={this.submitForm} horizontal>
                 <FormGroup>
@@ -39,7 +37,7 @@ class TodoForm extends Component{
                     Title
                   </Col>
                   <Col sm={5}>
-                    <FormControl onChange={this.updateInputs} name="title" placeholder="Title" />
+                    <FormControl required onChange={this.updateInputs} name="title" placeholder="Title" />
                   </Col>
                 </FormGroup>
 
@@ -47,7 +45,7 @@ class TodoForm extends Component{
                   <Col componentClass={ControlLabel} sm={2}>
                     Description
                   </Col>
-                  <Col sm={8}>
+                  <Col sm={10}>
                     <FormControl minLength="3" onChange={this.updateInputs} name="description" placeholder="Description" />
                   </Col>
                 </FormGroup>
@@ -56,7 +54,7 @@ class TodoForm extends Component{
                   <Col componentClass={ControlLabel} sm={2}>
                     Image URL
                   </Col>
-                  <Col sm={8}>
+                  <Col sm={10}>
                     <FormControl onChange={this.updateInputs} name="imgURL" placeholder="Img URL" />
                   </Col>
                 </FormGroup>
