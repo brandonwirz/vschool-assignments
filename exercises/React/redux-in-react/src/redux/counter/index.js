@@ -1,4 +1,3 @@
-// export default function reducer(prevState = 0, action) {
 export default function reducer(prevState = 0, action) {
       switch(action.type) {
           case "INCREMENT":
