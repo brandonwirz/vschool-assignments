@@ -1,10 +1,7 @@
 [
   {
-    "location": "Bend, Oregon",
-    "price": "$400",
-    "timeToGo": "Spring",
-    "backgroundColor": "beige",
-    "info": "information1",
+    "title": "Bend, Oregon",
+    "description": "$400",
     "imgURL": "https://upload.wikimedia.org/wikipedia/en/7/72/Raphael_%28Teenage_Mutant_Ninja_Tutles%29.jpg"
   },{
     "location": "Bahamas",

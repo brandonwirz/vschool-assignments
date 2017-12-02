@@ -51,30 +51,30 @@ class App extends React.Component{
       );
     };
 
-
-export default App
-
-
-
-
-
-
-
-render(){
-  return(
-      {this.turtles.map(turtle =>
-
-
-
-
-
-  )
-
-
-
-
-
-
-
-
 }
+export default App;
+
+
+
+
+
+
+
+// render(){
+//   return(
+//       {this.turtles.map(turtle =>
+//
+//
+//
+//
+//
+//   )
+//
+//
+//
+//
+//
+//
+//
+//
+// }

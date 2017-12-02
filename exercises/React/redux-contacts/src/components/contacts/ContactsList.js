@@ -6,6 +6,7 @@ function ContactsList(props){
   // console.log(props);//props.contacts
     const contacts =  props.contacts.map(
       (contact, i) => <li key={contact.name + i}>{contact.name}</li>
+
     )//only one item no brackets needed
 
     return(
@@ -14,6 +15,7 @@ function ContactsList(props){
         </ul>
     )
 }
+
 function mapStateToProps(state){
     return state
 }
