@@ -2,11 +2,12 @@ import React from "react"
 
 function Name(props){
   return(
-      <div>
+    <div>
         <li>{props.name}</li>
         <button onClick={props.delete}>x</button>
-      </div>
+    </div>
+
   )
 }
 
-export default Name
+export default Name;

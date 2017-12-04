@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 // import action creators
 import {add} from "../../redux/contacts";
+// import {deleteImg} from "../../redux/contacts";
 
 
 class AddContactForm extends Component {
@@ -14,6 +15,7 @@ class AddContactForm extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleDelete = this.handleDelete.bind(this)
     }
 
 
@@ -34,7 +36,15 @@ handleSubmit(e){
             img: ""
     });
 }
-
+handleDelete(e){
+    //because page refreshes
+    this.props.deleteImg(this.state);
+    // this.setState({
+    //         title:"",
+    //         description: "",
+    //         img: ""
+    // });
+}
 
   render(){
     const styles = {
@@ -54,12 +64,14 @@ handleSubmit(e){
                      type ="text"
                      onChange={this.handleChange}/>
                      &nbsp;
+
               <input name = "description"
                      placeholder="Description"
                      value= {this.state.description}
                      type="text"
                      onChange={this.handleChange}/>
                      &nbsp;
+
               <input name= "img"
                      placeholder="Image URL"
                      value= {this.state.img}
@@ -67,9 +79,15 @@ handleSubmit(e){
                      onChange={this.handleChange}/>
 
               <button>submit</button>
+              {/* <button>delete</button> */}
+
           </form>
         )
-    }
+        // return (
+        //
+        //
+        // )
+     }
 }
 
 
