@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Lawn Care",
+        "_id": "123",
+        "price": 20
+    },
+    {
+        "name": "Snow Removal",
+        "_id": "234",
+        "price": 30
+    },
+    {
+        "name": "Pet Grooming",
+        "_id": "345",
+        "price": 100
+    },
+    {
+        "name": "Dog Walking",
+        "_id": "456",
+        "price": 200
+    }
+]

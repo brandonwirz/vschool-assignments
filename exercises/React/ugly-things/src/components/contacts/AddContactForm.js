@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 // import action creators
-import {add} from "../../redux/contacts";
-// import {deleteImg} from "../../redux/contacts";
+import {add,deleteImg} from "../../redux/contacts";
 
 
 class AddContactForm extends Component {
@@ -37,13 +36,9 @@ handleSubmit(e){
     });
 }
 handleDelete(e){
-    //because page refreshes
-    this.props.deleteImg(this.state);
-    // this.setState({
-    //         title:"",
-    //         description: "",
-    //         img: ""
-    // });
+    e.preventDefault();
+    this.props.deleteImg();
+    console.log(this.props.handleDelete());
 }
 
   render(){
@@ -91,4 +86,4 @@ handleDelete(e){
 }
 
 
-export default connect(null, {add})(AddContactForm)
+export default connect(null, {add, deleteImg})(AddContactForm)

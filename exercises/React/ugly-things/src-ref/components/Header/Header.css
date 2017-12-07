@@ -1,9 +1,0 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2vh 0;
-  background-color: khaki;
-  color: darkslateblue;
-}

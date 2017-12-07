@@ -1,0 +1,52 @@
+.darkStarLink {
+            font-size: 16px;
+            text-decoration: none;
+            margin-top:-30px;
+            display:block;
+            /*padding-bottom:20px;*/
+            color:#070839;
+          }
+
+a {
+      margin-top:0px;
+      text-decoration: none;
+      font-size: 20px;
+      display:inline-block;
+      padding:10px;
+      color:rgb(17, 42, 105);
+}
+
+a:hover{
+      color:#f3f1f4;
+
+}
+div.centerInfo{
+   position: absolute;
+   margin: auto;
+   top: -200px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 300px;
+   height: 0px;
+   text-align: center;
+}
+/*div.centerInfo2{
+   position: absolute;
+   margin: auto;
+   top: 20px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 300px;
+   height: 0px;
+   text-align: center;
+}*/
+/*.nav{
+  font-size: 30px;
+}*/
+/*.navContainer{
+    width:500px;
+    margin:50px;
+
+}*/

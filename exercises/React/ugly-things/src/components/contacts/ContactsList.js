@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 
+import {deleteImg} from "../../redux/contacts";
 // const uglyThings = [
 //   {
 //     name: "Ugly-women",
@@ -25,29 +26,27 @@ const styles ={
 }
 
 function ContactsList(props){
-        // console.log(props);//props.contacts
-  const contacts = props.contacts.map((contact, i) => {
+    const contacts = props.contacts.map((contact, i) => {
         return (
-              <div>
-                  <h1 key={contact.title + i}></h1>
+              <div className="ugly" key={contact.title + i}>
+                  <h1>{contact.title}</h1>
                   <h2>{contact.description}</h2>
                   <img src={contact.img} alt={`${contact.title}`}/>
-                  {/* <button type="delete" onClick={contact.handleDelete}>delete</button> */}
+                  <button onClick={props.handleDelete}>Delete</button>
               </div>
               )
-          })
+          });
 
-return(
-      <div style={styles}>
-         {contacts}
-      </div>
+  return (
+          <div style={styles}>
+             {contacts}
+          </div>
     )
 }
 
 
 function mapStateToProps(state){
     return state
-
 }
 
-export default connect(mapStateToProps, null)(ContactsList);
+export default connect(mapStateToProps, {deleteImg})(ContactsList);
