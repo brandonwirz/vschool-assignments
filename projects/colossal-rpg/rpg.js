@@ -66,17 +66,14 @@ function enemyAttack() {
     }
 }
 
-//console.log("I'm so glad to finally find you. Be careful, there are zombies everywhere! Press 'w' to walk to avoid attracting attenton or 'i' for your inventory.")
 var greeting = readline.keyIn("\nHello, are you ready to play! Press any key to begin. ");
     while (!name) {
       var name = readline.question("\nWhat is your name? ");
       player.name = name;
 }
   console.log(`\nHello ${name}!`);
-/////////////////Actions///////////////////
 
 //inventory//
-
 function checkInventory() {
     console.log(`\n\n ${player}`);
 }
