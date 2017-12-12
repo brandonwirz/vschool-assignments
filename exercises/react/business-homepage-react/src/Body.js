@@ -12,7 +12,7 @@ function Body(props){
 
  <div className="products">
         <figure>
-            <img className="main-product"src={require("./assets/zinn-book.jpg")}/>
+            <img className="main-product" src={require("./assets/zinn-book.jpg")}/>
               <figcaption className="cap1">
                 A People's History of the United States<br></br>
                 <b>Author:</b> Howard Zinn<br></br>

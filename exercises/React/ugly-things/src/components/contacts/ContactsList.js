@@ -2,23 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 
 import {deleteImg} from "../../redux/contacts";
-// const uglyThings = [
-//   {
-//     name: "Ugly-women",
-//     url: "https://www.funnypica.com/wp-content/uploads/2012/05/Ugly-Woman.jpg",
-//     desc: "Pretty bad"
-//   },
-//   {
-//     name: "Funny looking",
-//     url: "https://www.funnypica.com/wp-content/uploads/2012/05/funny-looking-people.jpg",
-//     desc: "Not sure what this is"
-//   },
-//   {
-//     name: "Nice Bath",
-//     url: "https://www.funnypica.com/wp-content/uploads/2012/05/Nice-bath.jpg",
-//     desc: "Another image you wish you never saw"
-//   }
-// ]
+
 
 const styles ={
         textAlign:"center",

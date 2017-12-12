@@ -1,12 +1,13 @@
 import React from "react";
+import "./c-styles.css";
 
-function Body(){
-  return(
-    <div>
-
-    </div>
-
+export default function Body(){
+    return(
+      <div className="row">
+        <img className="column" src={require("./images/almaas_thumb.png" ) } alt=""/>
+          {/* <div className="column" src={require("./images/almaas_thumb.png")}></div> */}
+          <img className="column" src={require("./images/almaas_thumb.png")} alt=""/>
+      </div>
   )
 }
-
-export default Body;
+  {/* <img className="main-product" src={require("./assets/zinn-book.jpg")}/> */}

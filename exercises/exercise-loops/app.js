@@ -24,7 +24,7 @@
 // }
 // console.log(firstOccur("guitarist"));
 
-
+w
 // function upTo42(arr){
 //   for (var i = 0; i < arr.length; i++){
 //     if (arr[i] === 42){
