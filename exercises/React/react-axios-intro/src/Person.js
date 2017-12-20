@@ -1,4 +1,4 @@
-import React from 'react'
+∑import React from 'react'
 
 function Person(props){
   return <h1>{props.info.name}</h1>

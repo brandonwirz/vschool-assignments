@@ -8,7 +8,6 @@ export function getLocalForcast(lat, long){
           dispatch({
             type: "GET_LOCAL_FORCAST",
             item: response.data
-
           })
       })
    }

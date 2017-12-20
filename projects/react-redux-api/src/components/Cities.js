@@ -34,7 +34,7 @@ handleChange(e) {
 
 handleSubmit(e){
     e.preventDefault();//because page refreshes
-    this.props.getCityForcast(this.state.latitude,this.state.longitude );
+    this.props.getCityForcast(this.state.latitude,this.state.longitude);
     // this.props.addDescription(this.state);
     // this.props.addImage(this.state);
     this.setState({

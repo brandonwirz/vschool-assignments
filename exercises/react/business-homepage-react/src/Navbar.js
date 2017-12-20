@@ -8,6 +8,7 @@ function Navbar(props) {
     // }
     return (
         <div>
+          <img src={require("./assets/welcome-to-hell.jpg")}/>
             <ul className="nav">
                 <li><a href="#">Protest</a></li>
                 <li><a href="#">Globalization</a></li>

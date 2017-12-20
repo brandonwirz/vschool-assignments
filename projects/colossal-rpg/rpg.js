@@ -18,17 +18,17 @@ function randomNum(min, max) {
 
   ////powers
 function weapon(){
-      var power = ["Farore's Wind", "Light Arrows", "Magic Spin Attack"];
-      var randomPower = randomNum(0,2);
-      var newPower = power[randomPower];
-      return newPower;
+    var power = ["Farore's Wind", "Light Arrows", "Magic Spin Attack"];
+    var randomPower = randomNum(0,2);
+    var newPower = power[randomPower];
+    return newPower;
   }
 //Zelda enemies
 function enemies(){
-  var enemy =["Gel", "Moblin", "Tektite", "Ghini"];
-  var randomEnemy = randomNum(0,3);
-  var namedEnemy = enemy[randomEnemy];
-  return namedEnemy;
+    var enemy =["Gel", "Moblin", "Tektite", "Ghini"];
+    var randomEnemy = randomNum(0,3);
+    var namedEnemy = enemy[randomEnemy];
+    return namedEnemy;
 }
 //prizes
 function prizes(){
@@ -107,7 +107,6 @@ function run() {
 //attack
 
 var charPower = Math.floor((Math.random() * 10) + 1)
-
 var enemyPower = Math.floor((Math.random() * 10) + 1)
 
 
