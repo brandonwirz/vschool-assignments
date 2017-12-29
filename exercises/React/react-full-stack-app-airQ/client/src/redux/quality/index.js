@@ -7,8 +7,8 @@ export function getQualityList() {
                 dispatch({
                     type: "GET_QUALITY_LIST",
                     data: response.data
-                });
             });
+        });
     }
 }
 

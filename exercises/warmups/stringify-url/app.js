@@ -1,3 +1,6 @@
+// Write a function that takes a query object and an HTTP
+// endpoint and then returns a URL with a query string.
+
 //Example:
 // let endpoint = "http://localhost:8080/monkeys",
 // let query = {
@@ -22,10 +25,27 @@
 //     }
 //       return url.slice(0, -1)
 // }
-//
-//
-//
 // console.log(stringifyUrl(endpoint, query));
+
+
+
+var endpoint = "http://localhost:8080/monkeys"
+var query = {
+  color: "black",
+  species: "howler"
+}
+function stringifyUrl(endpoint, query) {
+      endpoint += "?"
+      for(let key in query) {
+          endpoint += `${key}=${query[key]}&`
+      }
+      return endpoint.slice(0, -1)
+}
+console.log(stringifyUrl(endpoint, query));
+
+//http://localhost:8080/monkeys?color=black&species=howler
+
+console.log(stringifyUrl(endpoint, query) === "http://localhost:8080/monkeys?color=black&species=howler" );//true
 
 
 //alternative
@@ -40,26 +60,3 @@
 //     return endpoint.slice(0, -1)
 // }
 // console.log(stringifyUrl(endpoint, query));
-
-
-// app.get("/", (req, res)=>{
-//     console.log(req.query)
-//
-//     const searchResults = sweaters.filter(sweater=>{
-//
-//         let doesMatchAll = true
-//
-//         for (prop in req.query){
-//             if (sweater[prop].toLowerCase() !== req.query[prop]){
-//                 doesMatchAll = false
-//             }
-//         }
-//
-//         return doesMatchAll
-//     })
-//     return res.send(searchResults)
-// })
-//
-// app.listen(port, () => {
-//     console.log(`Server is listening on port ${port}`)
-// })

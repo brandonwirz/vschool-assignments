@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 app.use(bodyParser.json());
 app.use(morgan("dev"));
 
+// localhost:7500/quality
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/air-quality",
     {useMongoClient: true},

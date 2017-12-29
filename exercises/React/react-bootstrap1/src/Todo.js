@@ -53,7 +53,7 @@ class Todo extends Component{
         return (
             <div>
 
-                {!this.state.isEditVisable ? <div>
+                {this.state.isEditVisable ? <div>
                     <h3 name="title" style={ this.state.completed ? lineThrough : null }>{this.state.title}</h3>
                     <h5>{this.state.description}</h5>
                     <button id={_id} onClick={this.props.delete}>Delete</button>Completed?
