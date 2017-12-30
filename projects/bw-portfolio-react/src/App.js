@@ -8,14 +8,14 @@ import "./assets/styles.css";
 
 export default function App() {
     return (
-          <div><Header/>
+          <div>
+            <Header/>
               <div className="container"><Body/></div>
             <Footer/>
           </div>
-
       )
       //Speeds up reload, no page refresh
-      if(module.hot){
-          module.hot.apply();
-    }
+    //   if(module.hot){
+    //       module.hot.apply();
+    // }
 }

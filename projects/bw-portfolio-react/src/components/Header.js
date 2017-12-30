@@ -16,18 +16,18 @@ function Header(){
 
         </div>
         <nav>
-              <Link to="/" className="active">Portfolio</Link>
+              {/* <Link to="/" className="active">Portfolio</Link> */}
               <Link to="/#about">About</Link>
               <Link to="/#resume">Resume</Link>
               <Link to="/#contact">Contact</Link>
-              <Link to="/"><i class="fa fa-linkedin fa-lg"></i></Link>
-              <Link to="/"><i class="fa fa-github fa-lg"></i></Link>
+              <Link to="/"><i className="fa fa-linkedin fa-lg"></i></Link>
+              <Link to="/"><i className="fa fa-github fa-lg"></i></Link>
 
-            <Switch>
-              <Route exact path="/" component=""/>
-              <Route path="/about" component=""/>
-              <Route path="/contact" component=""/>
-            </Switch>
+            {/* <Switch>
+              <Route exact path="/" component={body}/>
+              <Route path="/about" component={about}/>
+              <Route path="/contact" component={contact}/>
+            </Switch> */}
         </nav>
 
           <img src={banner_header} className="banner-header" alt="header" />

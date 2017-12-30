@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+
+
+/*@media (min-width: 1280px){*/
 * {
     box-sizing: border-box;
 }
@@ -59,7 +63,7 @@ nav{
     /*left:300px;*/
     right:0px;
     top:50px;
-    width:50%;
+    width:40%;
 }
 
 nav a{
@@ -81,23 +85,9 @@ a:hover{
 .main{
     margin: 0 auto;
     width:100%;
-    height:auto;
+    height: auto;
 }
 
-.background-footer{
-    margin-top:800px;
-    background-color: #0D172E;
-    max-width: 100%;
-    height:100px;
-}
-.banner-footer{
-    margin-top:800px;
-    margin: 0 auto;
-    width: 100%;
-    height:100px;
-  /*text-align: center;*/
-  /*position: absolute;*/
-}
 
 /*.container{
   width:100%;
@@ -106,7 +96,7 @@ a:hover{
 
 }*/
 .intro{
-    margin:40px 0 250px 0;
+    margin:40px 0 20px 0;
     text-align: center;
 }
 .column {
@@ -142,16 +132,47 @@ a:hover{
     text-align: center;
     width:100%;
     margin:0 auto;
-    margin-top:20px;
+    margin-top:0px;
+
 }
 .family-image{
     width: 100%;
     height: auto;
+    position: relative;
+
 }
 .bw-color-image{
-  position: relative;
+    position: relative;
+    text-align: center;
+    margin-top: 200px;
+    margin-top:700px;
+
+}
+h1{
+    text-align: center;
+}
+p{
+  text-align: center;
+  padding: 0 200px 0 200px;
+}
+#about-me{
 }
 
+.background-footer{
+    margin-top:800px;
+    background-color: #0D172E;
+    max-width: 100%;
+    height:100px;
+}
+.banner-footer{
+    margin-top:800px;
+    margin: 0 auto;
+    width: 100%;
+    height:100px;
+  /*text-align: center;*/
+  /*position: absolute;*/
+
+}
 /*-----------------------------------------------*/
 @media (max-width: 600px) {
     .column {

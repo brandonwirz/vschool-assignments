@@ -97,9 +97,9 @@ function doesEnemyAppear() {
 function run() {
     runOrDie = Math.floor((Math.random() * 2) + 1)
     if (runOrDie === 1) {
-        console.log("\nSorry, you died. Please try again")
+        console.log("\nSorry, you died. Please try again ")
     } else {
-        console.log("\nYour lucky..., press 'w' to continue walking or press 'i' to view inventory.")
+        console.log("\nYour lucky...keep playing!")
     }
 }
 
@@ -116,10 +116,10 @@ function fight() {
     enemyPower = Math.floor((Math.random() * 10) + 1)
     charPower = Math.floor((Math.random() * 10) + 1)
     if (charPower < enemyPower) {
-        console.log("\nYou have died! Press 'w' to try again")
+        console.log("\nYou have died! Play again?")//Press 'w' to try again"
     } else {
 
-        console.log("\nYou choose to attack with " + weapon() + "\n\nthe enemy has " + enemyHealth() + " You have " + playerHealth() + " left and won a " + prizes() + "\n\n Press 'i' for inventory or 'w' to continue playing.")
+        console.log("\nYou choose to attack with " + weapon() + "\n\nthe enemy has " + enemyHealth() + " You have " + playerHealth() + " left and won a " + prizes() + "\n")
         //player.inventory.push(prizes())
     }
 }
