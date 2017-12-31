@@ -106,7 +106,3 @@ function subString(dog){
   return dog.substr(dog.length / 2);
 }
 subString("Rottytotty");
-
-
-
-return dog.substr(dog.length /2)

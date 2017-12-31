@@ -12,7 +12,7 @@ export default function Body(){
   // }
     return(
       <div>
-        <div className="intro">Hello, my name is Brandon,   <p>Hello my name is Brandon,  ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tristique tempus. Donec finibus, libero sodales volutpat pretium, diam lacus pulvinar mauris, sed elementum urna lorem vel diam. Fusce nisl justo, venenatis at massa in, ullamcorper iaculis urna. Donec eu condimentum tellus. Curabitur vitae augue vel nisl luctus faucibus. Duis vestibulum nulla eget turpis dictum laoreet. Proin tempus faucibus sapien a condimentum. Maecenas faucibus ultrices convallis. Phasellus volutpat urna eget tempor maximus. Proin lacus mauris, commodo et efficitur eu, dignissim interdum nisl. Donec pellentesque id nunc a aliquet. Nam ultricies eros quis elit placerat, eu commodo nunc ultrices. Donec in cursus orci. Quisque pretium porta dui eu porttitor. Sed libero turpis, finibus vel tempus luctus, facilisis et ex. Integer mollis, enim eget tincidunt vestibulum, enim libero dignissim lacus, non ullamcorper nibh nisl vel dolor. Morbi </p></div>
+        <div className="intro">Hello and welcome to my website. My name is Brandon I have over 10 years experience as a graphic designer/web designer and I have recently graduated from V School Full Stack JavaScript web development program. Check out some of my design work below and see my coding examples on github.<a href="https://github.com/brandonwirz" target="_blank"> </a></div>
           <div className="row">
               <img className="column" src={require("./images/ehs-thumb.png")} alt=""/>
               <img className="column" src={require("./images/almaas_thumb.png")} alt=""/>
@@ -26,18 +26,33 @@ export default function Body(){
               <img className="family-image" src={require("./images/dogs-w-sheree.jpg")} alt=""/>
           </div>
 
-          <div className="bw-color-image">
+          <div id="about" className="bw-color-image">
             <img src={require("./images/bw-color.png")} alt=""/>
           </div>
               <div id="about"><h1>About me</h1>
-            <p>Hello my name is Brandon,  ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tristique tempus. Donec finibus, libero sodales volutpat pretium, diam lacus pulvinar mauris, sed elementum urna lorem vel diam. Fusce nisl justo, venenatis at massa in, ullamcorper iaculis urna. Donec eu condimentum tellus. Curabitur vitae augue vel nisl luctus faucibus. Duis vestibulum nulla eget turpis dictum laoreet. Proin tempus faucibus sapien a condimentum. Maecenas faucibus ultrices convallis. Phasellus volutpat urna eget tempor maximus. Proin lacus mauris, commodo et efficitur eu, dignissim interdum nisl. Donec pellentesque id nunc a aliquet. Nam ultricies eros quis elit placerat, eu commodo nunc ultrices. Donec in cursus orci. Quisque pretium porta dui eu porttitor. Sed libero turpis, finibus vel tempus luctus, facilisis et ex. Integer mollis, enim eget tincidunt vestibulum, enim libero dignissim lacus, non ullamcorper nibh nisl vel dolor. Morbi </p></div>
+                <p className="about-me">Hello my name is Brandon, I am a highly accomplished Web Designer/Developer with more than 7 years experience. Expertise in
+                all facets of visual design, responsive design and development. Instrumental in streamlining and
+                improving processes, enhancing productivity, implementing technology and design and development
+                solutions. Technical proficiency in web development, graphic design, responsive design, art direction,
+                branding, video editing, wireframing and social media. Ability to learn new software quickly. In early
+                 January I will be graduating from V School Full Stack JavaScript Web Development program.<br/><br/>
+                Curriculum: HTML5, CSS, Responsive Web Design, Bootstrap, JavaScript ES6, Node.js, express, mongooseDb, mocha, JS Ajax, jQuery, JSON, React, Redux, CRUD and working with API’s/Postman.</p>
+              </div>
+
+          <pre>
 
 
-            <div className="bw-color-image">
-              <img src={require("./images/mountains-river.jpg")} alt=""/>
+
+          </pre>
+            <div className="">
+              <img className="mtn-pic-break" src={require("./images/mountains-river.jpg")} alt=""/>
             </div>
-             <div id="resume"><h1>Resume</h1></div>
 
+
+             <div id="resume"><h1>Resume</h1></div>
+             <div className="resume">
+               <img className="" src={require("./images/B-Wirz-resume.svg")} alt=""/>
+             </div>
               {/* <div id="contact"><h1>Contact</h1></div>  */}
 
 
