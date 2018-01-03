@@ -20,11 +20,14 @@ export default function Body(){
               <img className="column" src={require("./images/smi-sell-header.png")} alt=""/>
               <img className="column" src={require("./images/happiness_thumb.png")} alt=""/>
               <img className="column" src={require("./images/frontline_th.jpg")} alt=""/>
+              <img className="column" src={require("./images/happiness_thumb.png")} alt=""/>
+              <img className="column" src={require("./images/frontline_th.jpg")} alt=""/>
           </div>
 
           <div className="image-break"><img className="logos" src={require("./images/logos.png")} alt=""/>
-              <img className="family-image" src={require("./images/dogs-w-sheree.jpg")} alt=""/>
-          </div>
+            </div>
+            <div className="family-image"><img className="family-image" src={require("./images/dogs-w-sheree.jpg")} alt=""/></div>
+
 
           <div id="about" className="bw-color-image">
             <img src={require("./images/bw-color.png")} alt=""/>

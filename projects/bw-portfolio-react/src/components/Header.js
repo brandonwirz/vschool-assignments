@@ -10,28 +10,23 @@ function Header(){
     color:"#259cdb"
   }
   return(
+
       <div className="background-header">
         <div className="nav-container">
             <img className="name" src={require("./images/bw-photo-name.png")} alt=""/>
-
         </div>
-        <nav>
-              {/* <Link to="/" className="active">Portfolio</Link> */}
-              <Link to="/#about">About</Link>
-              <Link to="/#resume">Resume</Link>
-              <Link to="/#contact">Contact</Link>
-              <Link to="/"><i className="fa fa-linkedin fa-lg"></i></Link>
-              <Link to="/"><i className="fa fa-github fa-lg"></i></Link>
 
-            {/* <Switch>
-              <Route exact path="/" component={body}/>
-              <Route path="/about" component={about}/>
-              <Route path="/contact" component={contact}/>
-            </Switch> */}
-        </nav>
 
           <img src={banner_header} className="banner-header" alt="header" />
-
+          <nav>
+                {/* <Link to="/" className="active">Portfolio</Link> */}
+                <Link to="/#about">About</Link>
+                <Link to="/#resume">Resume</Link>
+                <Link to="/#contact">Contact</Link>
+                <Link to="/"><i className="fa fa-linkedin fa-lg"></i></Link>
+                <Link to="/"><i className="fa fa-github fa-lg"></i></Link>
+                <a class="icon" onclick="myFunction()">&#9776;</a>
+          </nav>
              {/* <div className="under-header">
              </div> */}
 
@@ -44,12 +39,10 @@ function Header(){
 }
 
 export default Header;
-//
-// <ul>
-//   <li>Portfolio</li>
-//   <li>About me</li>
-//   <li>Resume</li>
-//   <li>Contact</li>
-//   <li><i class="fa fa-linkedin"></i></li>
-//   <li><i class="fa fa-github"></i></li>
-// </ul>
+
+
+              {/* <Switch>
+                <Route exact path="/" component={body}/>
+                <Route path="/about" component={about}/>
+                <Route path="/contact" component={contact}/>
+              </Switch> */}
