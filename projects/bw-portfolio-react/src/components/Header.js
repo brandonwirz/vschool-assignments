@@ -9,6 +9,7 @@ function Header(){
   const styles= {
     color:"#259cdb"
   }
+
   return(
 
       <div className="background-header">
@@ -18,14 +19,14 @@ function Header(){
 
 
           <img src={banner_header} className="banner-header" alt="header" />
-          <nav>
-                {/* <Link to="/" className="active">Portfolio</Link> */}
+
+          <nav id="top-nav">
                 <Link to="/#about">About</Link>
                 <Link to="/#resume">Resume</Link>
                 <Link to="/#contact">Contact</Link>
                 <Link to="/"><i className="fa fa-linkedin fa-lg"></i></Link>
                 <Link to="/"><i className="fa fa-github fa-lg"></i></Link>
-                <a class="icon" onclick="myFunction()">&#9776;</a>
+                <a className="icon" onclick="myFunction()">&#9776;</a>
           </nav>
              {/* <div className="under-header">
              </div> */}
@@ -35,14 +36,25 @@ function Header(){
              <div className="header-image"></div>
 
           </div>
+
+      )
+      return(
+          function myFunction() {
+                var x = document.getElementById("nav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
       )
 }
 
 export default Header;
 
 
-              {/* <Switch>
+              /* <Switch>
                 <Route exact path="/" component={body}/>
                 <Route path="/about" component={about}/>
                 <Route path="/contact" component={contact}/>
-              </Switch> */}
+            </Switch> */

@@ -80,13 +80,21 @@ nav a{
     display: none;
 }
 @media screen and (max-width: 600px) {
-  a:not(:first-child) {display: none;}
-  icon {
+/*
+  a:not(:first-child) {display: none;}*/
+  /*icon {
     float: right;
     display: block;
-  }
+  }*/
   .icon {
       display: visible;
+      float: right;
+      display: block;
+      margin-top:-20px;
+      font-size: 1.7em;
+  }
+  nav a{
+      display: none;
   }
 }
 
