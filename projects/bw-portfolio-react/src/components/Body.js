@@ -12,7 +12,7 @@ export default function Body(){
   // }
     return(
       <div>
-        <div className="intro">Hello and welcome to my website. My name is Brandon I have over 10 years experience as a graphic designer/web designer and I have recently graduated from V School Full Stack JavaScript web development program. Check out some of my design work below and see my coding examples on github.<a href="https://github.com/brandonwirz" target="_blank"> </a></div>
+        <div className="intro"><p>Hello and welcome to my website. My name is Brandon I have over 10 years experience as a graphic designer/web designer and I have recently graduated from V School Full Stack JavaScript web development program. Check out some of my design work below and see my coding examples on github.<a href="https://github.com/brandonwirz" target="_blank"> </a></p></div>
           <div className="row">
               <img className="column" src={require("./images/ehs-thumb.png")} alt=""/>
               <img className="column" src={require("./images/almaas_thumb.png")} alt=""/>
@@ -20,8 +20,7 @@ export default function Body(){
               <img className="column" src={require("./images/smi-sell-header.png")} alt=""/>
               <img className="column" src={require("./images/happiness_thumb.png")} alt=""/>
               <img className="column" src={require("./images/frontline_th.jpg")} alt=""/>
-              <img className="column" src={require("./images/happiness_thumb.png")} alt=""/>
-              <img className="column" src={require("./images/frontline_th.jpg")} alt=""/>
+
           </div>
 
           <div className="image-break"><img className="logos" src={require("./images/logos.png")} alt=""/>
