@@ -21,7 +21,13 @@ const evensOnly = function(arr) {
 };
 console.log(evensOnly([3, 6, 8, 2]));
 
-
+// var value = 3
+// var arr = [1, 2, 3, 4, 5, 3]
+// arr = arr.filter(function(item) {
+//     return item !== value
+// })
+// console.log(arr)
+// [ 1, 2, 4, 5 ]
 
 //3) Filter all strings out of the array that are less than 5 characters long
 const fiveCharactersAndLessOnly = function(arr) {

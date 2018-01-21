@@ -22,7 +22,7 @@ import "../assets/styles.css";
               </nav>
         <div className="nav-container">
               </div>
-                    <img className="name" src={require("./images/bw-photo-name.png")} alt="bw photo and title"/>
+                    <img className="name" src={require("./images/bw-photo-name.png")} alt=""/>
                     <img src={banner_header} className="banner-header" alt="header" />
                     <div className="header-image"></div>
               </div>

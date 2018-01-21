@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <!-- normalizer alternative to css reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- Modernizr what HTML, CSS and JavaScript features the user's browser has to offer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title></title>
+
+</head>
+    <body>
+        <header class="background-header">
+            <nav>
+                <div class="topnav" id="myTopnav">
+                   <a href="#about" class="active">About</a>
+                   <a href="#resume">Resume</a>
+                   <a href="#contact">Contact</a>
+                   <a href="#linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
+                   <a href="#github"><i class="fa fa-github fa-lg"></i></a>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+            </nav>
+                 <div class="banner-container">
+                   <img class="name" src="./images/bw-photo-name.png">
+                   <img src="./images/banner_header.jpg" class="banner-header" alt="header"/>
+                 </div>
+            </div>
+        </header>
+                <div class="top-icon" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+
+                <section>
+                        <p class="intro">Hello and welcome to my website. My name is Brandon I have over 8
+                         years experience as a Graphic/Web Designer and I have recently
+                         graduated from V School Full Stack JavaScript Web Development Program.
+                         Check out some of my design work below and see my coding examples on
+                         github.
+                         </p>
+                </section>
+
+    <!-- IMAGES DISPLAYED------------------------------------------------------>
+<div class="container">
+    <section class="row">
+              <div>
+                  <img class="column1" src="./images/ehs-thumb.jpg"
+                  onclick="openModal();currentSlide(1)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/almaas_thumb.jpg"
+                  onclick="openModal();currentSlide(2)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/lep-header.jpg"
+                  onclick="openModal();currentSlide(3)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/smi-sell-header.jpg"
+                  onclick="openModal();currentSlide(3)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/happiness_thumb.jpg"
+                  onclick="openModal();currentSlide(5)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/pacifico.jpg"
+                  onclick="openModal();currentSlide(6)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/iphones.jpg"
+                  onclick="openModal();currentSlide(10)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/spiderman2.jpg"
+                  onclick="openModal();currentSlide(11)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/fullyUploaded_lunchables_th.jpg"
+                  onclick="openModal();currentSlide(8)" alt=""/>
+              </div>
+
+
+              <!-- <div>
+                  <img class="column1 iphone" src="./images/spiderman_mobile_th.png"
+                  onclick="openModal();currentSlide(10)" alt=""/>
+              </div> -->
+
+              <div>
+                  <img class="column1" src="./images/vancouver_th.jpg"
+                  onclick="openModal();currentSlide(12)" alt=""/>
+              </div>
+
+              <div>
+                  <img class="column1" src="./images/parkAviara_th.jpg"
+                  onclick="openModal();currentSlide(13)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/w_new_york_th.jpg"
+                  onclick="openModal();currentSlide(14)" alt=""/>
+              </div>
+
+              <div>
+                  <img class="column1" src="./images/w_austin_th.jpg"
+                  onclick="openModal();currentSlide(15)" alt=""/>
+              </div>
+              <div>
+                  <img class="column1" src="./images/w_austin_th.jpg"
+                  onclick="openModal();currentSlide(15)" alt=""/>
+              </div>
+
+    </section>
+
+    <!-- MODAL POP UPS -------------------------------------------------------->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <a href="#" target="_blank">
+                  <img src="./images/ehs-thumb.jpg" style="width:100%"></a>
+                  <caption></caption>
+            </div>
+            <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <a href="#" target="_blank">
+                  <img src="./images/almaas_thumb.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <a href="#" target="_blank">
+                  <img src="./images/lep-header.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <a href="#" target="_blank">
+                  <img src="./images/smi-sell-header.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                  <div class="numbertext">5 / 4</div>
+                  <a href="#" target="_blank">
+                  <img src="./images/happiness_thumb.jpg"  style="width:100%">
+            </div>
+             <div class="mySlides">
+                  <div class="numbertext">6 / 4</div>
+                  <a href="#" target="_blank">
+                  <img src="./images/pacifico.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                 <div class="numbertext">7 / 4</div>
+                 <a href="#" target="_blank">
+                 <img src="./images/nescafe_th.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                 <div class="numbertext">8 / 4</div>
+                 <a href="#" target="_blank">
+                 <img src="./images/fullyUploaded_lunchables_th.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 4</div>
+                <a href="#" target="_blank">
+                <img src="./images/fullyUploaded_lunchables_th.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 4</div>
+                <a href="#" target="_blank">
+                <img src="./images/old_spice_th.jpg" style="width:30%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">11/ 4</div>
+                <a href="#" target="_blank">
+                <img src="./images/spiderman2.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">12/ 4</div>
+                <a href="#" target="_blank">
+                <img src="./images/vancouver_th.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                 <div class="numbertext">13/ 4</div>
+                 <a href="#" target="_blank">
+                 <img src="./images/parkAviara_th.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                 <div class="numbertext">14/ 4</div>
+                 <a href="#" target="_blank">
+                 <img src="./images/w_new_york_th.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                 <div class="numbertext">15/ 4</div>
+                 <a href="#" target="_blank">
+                 <img src="./images/w_austin_th.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div class="caption-container">
+                  <p id="caption"></p>
+            </div>
+
+            <!-- THUMBS ON POP UP HIDDEN ------------------------------------------------------------>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src=""  style="width:100%" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(5)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(6)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(8)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src=""  style="width:100%" onclick="currentSlide(8)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(9)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(10)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src=""  style="width:100%" onclick="currentSlide(11)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(12)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(13)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(14)" alt="">
+            </div>
+            <div class="column1">
+                  <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(15)" alt="">
+            </div>
+    </div>
+</div>
+</div>
+
+        <section class="image-break">
+             <div>
+                  <img class="logos" src="./images/logos.png" alt=""/>
+                      </div>
+                     <div class="family-image">
+                  <img class="family-image" src="./images/dogs-w-sheree.jpg" alt=""/>
+             </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="bw-color-image">
+                 <img src="./images/bw-color.png" width="135" height= "auto" alt=""/>
+                    </div>
+                        <h1>About me</h1>
+                             <p class="about-me">
+                                Hello my name is Brandon, I am a highly accomplished Web Designer/Developer with more
+                                than 8 years experience. Expertise in all facets of visual design, responsive design
+                                and development. Instrumental in streamlining and improving processes, enhancing
+                                productivity, implementing technology and design and development solutions. Technical
+                                proficiency in web development, graphic design, responsive design, art direction,
+                                branding, video editing, wireframing and social media. Ability to learn new software
+                                quickly. I recently graduated from V School Full Stack JavaScript
+                                Web Development program. I have a passion for building things</p><br/>
+                                <p class="about-me" >In my free time I enjoy playing the guitar, skiing, hiking, camping, travel and
+                                    really just enjoying Colorado with my wife and dogs. I also love movies, art and music. </p>
+                                <br/>
+                                <p class="about-me"><b>Curriculum:</b> HTML5, CSS, Responsive Web Design, Bootstrap, JavaScript ES6, Node.js, express,
+                                mongooseDb, mocha, Ajax, jQuery, JSON, React, Redux, CRUD and working with API’s/Postman.
+                                </p>
+
+        </section>
+        <div class="logo-container"><img class="logos-exp" src="./images/logos-exp.jpg"></div>
+
+        <!-- <div class="page-break-resume">
+</div> -->
+
+        <section id="resume">
+
+                    <h1>Resume</h1>
+                    <img class="resume" src="./images/B-Wirz-resume.svg">
+        </section>
+
+        <footer><img src="./images/banner_footer.jpg" class="banner-footer" alt="footer" /></footer>
+
+        <!-- javascript -->
+        <script src="./js/bw-web.js"></script>
+    </body>
+</html>

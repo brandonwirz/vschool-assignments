@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Prompt|Russo+One');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    /* font-family: 'Russo One', sans-serif; */
+    font-size: 23px;
+    letter-spacing: 1px;
+    /* font-family: 'Prompt', sans-serif; */
+}
+.banner-container{
+    position: relative;
+    width: 100%;
+    height:100px;
+}
+.banner-header{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height:100px;
+}
+/*github and linked in icons*/
+/*NAV-----------------------------------------------*/
+.fa-lg{
+  font-size:1.4em;
+  vertical-align: 0%
+}
+.fa-chevron-up{
+    font-size:2em;
+}
+.container{
+    margin: 0 auto;
+    padding:0 50px 0 50px;
+}
+.name{
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      width: 380px;
+      top:1px;
+      left:38%;
+}
+.top-icon{
+     /* text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white; */
+}
+#myBtn {
+      /* display: none; */
+      position: fixed;
+      bottom: 25px;
+      z-index: 99;
+      color: grey;
+      padding-left:2px;
+      right:25px;
+      background-color: rgba(121, 125, 124, .3);
+      cursor: pointer;
+      width:40px;
+      color:whitesmoke;
+      height: 40px;
+      border-radius: 50px;
+      font-size: 17px;
+      vertical-align: 0%;
+      background-color: rgba(36, 65, 105, .8);
+
+      /* text-shadow: 2px 2px 4px #FFFFFF; */
+}
+
+#myBtn:hover {
+    color: rgba(149, 167, 193, 0.8);
+    background-color:rgba(36, 65, 105, .6);
+
+}
+/*NAV-----------------------------------------------*/
+/* .nav-container{
+    width:900px;
+} */
+.topnav{
+    overflow: hidden;
+    display: block;
+}
+.topnav a{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: .9;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+/* .active {
+    background-color: #4CAF50;
+    color: white;
+} */
+.topnav .icon {
+    display: none;
+}
+
+
+
+/*-----------------------------------------------*/
+
+section{
+    margin-top:30px;
+}
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    /*border: 1px solid black;*/
+}
+.intro{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+      width:55%;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+  }
+  .row1{
+      margin-top:40px;
+      padding-left:10px;
+      padding-right:10px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+/*-----------------------------------------------*/
+
+
+  .image-break{
+       width: 100%;
+       /* height:600px; */
+       border: none;
+       background-color: #244169;
+       margin-top:100px;
+       position: relative;
+  }
+
+  .family-image{
+      width: 100%;
+      height: auto;
+      position: relative;
+      background-color: white;
+  }
+
+  /* .mtn-pic-break{
+    width:100%;
+    height: auto;
+    margin-top: 50px;
+  } */
+  .logos{
+    width:100%;
+    text-align: center;
+    margin:0 auto;
+}
+
+.about{
+    text-align: center;
+    position: relative;
+    width:100%;
+    height: auto;
+    background-color: rgba(233, 224, 192, .1);
+    margin-top: 0px;
+    padding:10px;
+    padding-bottom:50px;
+}
+
+.about-me{
+    text-align: left;
+    margin: 0 auto;
+    width: 55%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    position: relative;
+    overflow:auto;
+
+    /* background-color: lightblue; */
+}
+.bw-color-image{
+    position: relative;
+    margin: 0 auto;
+    z-index: 60;
+    margin-top:30px;
+}
+
+.page-break-resume{
+    width:100%;
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    background-color: rgba(184, 214, 241, .15);
+    position: relative;
+
+}
+.logo-container{
+    position: relative;
+    text-align: center;
+    width:100%;
+    margin-top:0px;
+    height: auto;
+    background-color: rgba(184, 214, 241, .15);
+    padding:25px 0 28px 0;
+    margin-bottom:50px;
+}
+.logos-exp{
+    position: relative;
+    margin-top:0px;
+    width:55%
+}
+#resume{
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+.resume{
+    position: relative;
+    margin:0 auto;
+    width:80%;
+    height: auto;
+}
+
+footer{
+    margin-top:200px;
+    background-color: #0D172E;
+    max-width: 100%;
+    height:100px;
+}
+.banner-footer{
+    margin-top:200px;
+    margin: 0 auto;
+    width: 100%;
+    height:100px;
+}
+
+
+
+
+
+
+/* MODAL---------------------------------------------------------------- */
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.iphone{
+    margin-top:10px;
+    width: 210px;
+    height: auto;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(5, 5, 5,.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  /* background-color: #fefefe; */
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1200px;
+  height:344px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    margin:0px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:last-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+/* .topnav .icon {
+    display: none;
+} */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav .icon {
+      display: visible;
+      float: right;
+      display: block;
+      display: inline-block;
+      margin-top:0px;
+      padding-left:10px;
+      padding-right:10px;
+      padding:16px;
+      text-decoration: none;
+      /* float: left; */
+      display: block;
+      color: grey;
+      text-align: center;
+      padding: 5px 16px;
+      text-decoration: none;
+      font-size: 1.7em;
+  }
+
+  .column1{
+      width: 100%;
+  }
+
+  p{
+      display:block;
+      width: 100%
+  }
+}

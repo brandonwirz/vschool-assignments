@@ -65,9 +65,8 @@ console.log(match(str));
 ////---split()---////
 function splitString(){
 var str = "The year was 2011.";
-var splitted = str.split(" ",2).join(" ");
-
-  console.log(splitted.toString());
+var splitted = str.split(" ", 2).join(" ");
+    console.log(splitted.toString());
 }
 console.log(splitString());
 

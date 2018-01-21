@@ -65,17 +65,7 @@ body {
 
 } */
 .topnav{
-    /* font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    right:50px;
-    top:25px;
-    font-size: .8em;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px; */
+
 
     overflow: hidden;
 
@@ -84,37 +74,15 @@ body {
     }
 
 
-/* .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-} */
 
 .topnav a{
-    font-family: 'Open Sans', sans-serif;
-
-    /* display: inline-block;
-    margin-top:0px;
-    padding-left:10px;
-    padding-right:10px;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px; */
-    /* float: left; */
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: black;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: .9;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -216,6 +184,28 @@ a:hover{
   margin:0 auto;
 
 }*/
+/* Modal Content ------------------------------------------*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 .intro{
     text-align: center;
     margin: 0 auto;
@@ -233,6 +223,9 @@ a:hover{
     height: auto;
     /*border: 1px solid black;*/
 }
+
+/* end modal --------------------------------------------*/
+
 .row{
     margin-top:40px;
     padding-left:10px;
