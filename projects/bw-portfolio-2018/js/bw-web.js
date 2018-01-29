@@ -66,3 +66,27 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+//jQuery
+//Resume expand-----------------------------------------------------------------
+// this.src = '/images/bw-color.png';
+$(".header-res").click(function () {
+    $header = $(this);
+    //getting the next element
+    $content = $header.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(1000, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $header.text(function () {
+            //change text based on condition
+            return $content.is(":visible") ? "Collapse -" : "Click to Expand +";
+        // return
+        //     if ($content.is(":visible")) {
+        //         "Collapseeeee -"
+        //         } else {
+        //         "Expandddd +"
+        //     }
+        });
+    });
+});

@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <title></title>
 
 </head>
@@ -26,8 +30,10 @@
                 </div>
             </nav>
                  <div class="banner-container">
-                   <img class="name" src="./images/bw-logo2.png">
+                     <img class="name" src="./images/bw-logo2.png">
+
                    <img src="./images/banner_header.jpg" class="banner-header" alt="header"/>
+                    <div class="arrow-down"></div>
                  </div>
             </div>
         </header>
@@ -37,8 +43,8 @@
                         <p class="intro">Hello and welcome to my website. My name is Brandon I have over 8
                          years experience as a Graphic/Web Designer and I have recently
                          graduated from V School Full Stack JavaScript Web Development Program.
-                         Check out some of my design work below and see my coding examples on
-                         github.
+                         Please see some of my design work below and you can see my coding examples on github:
+                         <a class="intro-link" href="https://github.com/brandonwirz" target="_blank">github.com/brandonwirz</a>
                          </p>
                 </section>
 
@@ -107,11 +113,13 @@
 
 
             <div class="mySlides">
+                <figcaption>Energy healing microsite</figcaption>
+                  </div>
+                  <br/>
                   <div class="numbertext">1</div>
                   <a href="#" target="_blank">
                   <img src="./images/Energy-Healing-800.png" style="width:100%"></a>
-                  <figcaption></figcaption>
-            </div>
+
             <div class="mySlides">
                   <div class="numbertext">2</div>
                   <a href="#" target="_blank">
@@ -271,19 +279,27 @@
 </div> -->
 
         <!-- expand resume ------------------------------------------------->
-        <section class="res-container">
-                    <!-- <h1>Resume</h1>
-                    <img class="resume" src="./images/B-Wirz-resume.svg"> -->
-                    <div class="res" id="resume">
-                        <h1>Resume</h1>
-                        <input id="toggle" type="checkbox" checked>
-                        <label for="toggle"></label>
-                        <div id="expand"></div>
-                        <div class="link"><a href="./images/b_wirz_resume_Designer_Developer.pdf">Download/View resume</a></div>
-                    </div>
+        <!-- <section class="res-container"> -->
 
-        </section>
 
+                <div class="res-container">
+                    <h1 id="resume">Resume</h1>
+                            <div class="header-res">
+                                <div class="expand">Click to Expand +</div>
+                            </div>
+                            <div class="content">
+                                <img class="resume" src="./images/B-Wirz-resume.svg">
+                            </div>
+                            <br/>
+                            <div class="link"><a href="./images/b_wirz_resume_Designer_Developer.pdf">Download/View resume</a></div>
+
+                </div>
+
+        <!-- <div class="res" id="resume">
+            <input id="toggle" type="checkbox" checked>
+            <label for="toggle"></label>
+            <div id="expand"></div>
+        </div> -->
         <!-- <section id="contact">
                     <h1>Contact</h1>
                     <img class="contact" src="">
@@ -294,7 +310,6 @@
                 <a href="mailto:bwirz75@gmail.com" target="_blank"><i class="fa fa-envelope fa" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/bwirz/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
                 <a href="https://github.com/brandonwirz" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-
             </div>
             <img src="./images/banner_footer.jpg" class="banner-footer" alt="footer" />
 
