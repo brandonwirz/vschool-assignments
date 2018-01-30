@@ -34,6 +34,7 @@ h1{
 }
 .fa-chevron-up{
     font-size:2em;
+    z-index:0;
 }
 .container{
     margin: 0 auto;
@@ -48,13 +49,14 @@ h1{
 }
 .top-icon{
      /* text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white; */
+     z-index:2
 }
 #myBtn {
       /* display: none; */
       position: fixed;
       bottom: 25px;
       z-index: 99;
-      color: grey;
+      /* color: grey; */
       padding-left:2px;
       right:25px;
       background-color: rgba(121, 125, 124, .3);
@@ -70,8 +72,8 @@ h1{
 }
 
 #myBtn:hover {
-    color: rgba(149, 167, 193, 0.8);
-    background-color:rgba(36, 65, 105, .6);
+    color: rgba(149, 167, 193, 0.4);
+    background-color:rgba(36, 65, 105, .3);
 }
 
 
@@ -115,7 +117,6 @@ h1{
     padding: 10px 10px;
     text-decoration: none;
     font-size: .8em;
-    font
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -170,7 +171,7 @@ section{
       position: absolute;
       top: 75%;
       width: auto;
-      padding: 10px;
+      padding: 5px;
       margin-top: -50px;
       color: white;
       font-weight: bold;
@@ -249,7 +250,7 @@ section{
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -268,14 +269,15 @@ section{
     width: 70%;
     max-width: 1200px;
     height:344px;
+    z-index: 100;
   }
 
   /* The Close Button */
   .close {
     color: white;
     position: absolute;
-    top: 10px;
-    right: 25px;
+    top: 60px;
+    right: 70px;
     font-size: 35px;
     font-weight: bold;
   }
@@ -334,20 +336,41 @@ section{
 /*IMAGE PAGE BREAK-----------------------------------------------*/
 
   .image-break{
-       width: 100%;
-       /* height:600px; */
-       border: none;
-       background-color: #244169;
-       margin-top:100px;
-       position: relative;
-  }
+    width: 100%;
+    height:620px;
+    border: none;
+    /* background-color: #244169; */
+    margin-top:100px;
+    position: relative;
+ }
+/* .family-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    content:"fdjasfndsjafnd";
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  .family-image{
-      width: 100%;
-      height: auto;
-      position: relative;
-      background-color: white;
-  }
+} */
+/* .parallax-window {
+    min-height: 400px;
+    background: transparent;
+} */
+.family-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/dogs-w-sheree.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
   /* .mtn-pic-break{
     width:100%;
@@ -365,7 +388,7 @@ section{
     position: relative;
     width:100%;
     height: auto;
-    background-color: rgba(233, 224, 192, .1);
+    background-color: rgba(233, 224, 192, .0);
     margin-top: 0px;
     padding:10px;
     padding-bottom:55px;
@@ -533,6 +556,26 @@ figcaption{
     font-family: 'Open Sans', sans-serif;
     color:white;
     margin-top:10px;
+    font-size:.8em;
+    margin-bottom:10px;
+}
+/* .modal .modal-content figcaption .caption a:link{ */
+
+figcaption a:link{
+    color: white;
+    /* text-decoration: none; */
+}
+figcaption a:visited{
+    color:white;
+    text-decoration: none;
+}
+figcaption a:hover{
+    color:#28b3f7;
+    /* text-decoration: none; */
+}
+figcaption a:active{
+    color:#dae8ee;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1150px){
@@ -609,7 +652,7 @@ figcaption{
   .next {
       cursor: pointer;
       position: absolute;
-      top: 150px;
+      top: 170px;
   }
 .topnav.responsive a {
     float: none;
@@ -728,14 +771,42 @@ p{
   .header-res{
       display: none
   }
-
+  figcaption{
+      font-family: 'Open Sans', sans-serif;
+      color:white;
+      margin-top:10px;
+      font-size:.7em;
+      margin-bottom:10px;
+  }
 }
+
 @media screen and (max-width: 675px){
     .prev,
     .next {
         cursor: pointer;
         position: absolute;
         top: 160px;
+    }
+    .image-break{
+      width: 100%;
+      height:280px;
+      border: none;
+      margin-top:100px;
+      position: relative;
+   }
+
+}
+@media screen and (max-width: 675px){
+    .family-image{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/dogs-w-sheree-675.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 }
 @media screen and (max-width: 550px){
@@ -800,7 +871,38 @@ p{
 .next {
     cursor: pointer;
     position: absolute;
-    top: 110px;
-}
-
+    top: 120px;
+    }
+     /* .family-image{
+        width: 100%;
+        height: 225px;
+        position: relative;
+        background-color: white;
+        display:none;
+    } */
+    /* .image-break{
+      width: 420px;
+      height:auto;
+      border: none;
+      background-color: #244169;
+      margin-top:100px;
+      position: relative;
+   } */
+.family-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/dogs-w-sheree-675.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    figcaption{
+        font-family: 'Open Sans', sans-serif;
+        color:white;
+        margin-top:10px;
+        font-size:.6em;
+        margin-bottom:10px;
+    }
 }

@@ -90,3 +90,6 @@ $(".header-res").click(function () {
         });
     });
 });
+
+//parallax
+// $('.parallax-window').parallax({imageSrc: '../images/dogs-w-sheree.png'});

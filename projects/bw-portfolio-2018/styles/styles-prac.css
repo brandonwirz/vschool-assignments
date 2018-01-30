@@ -8,6 +8,9 @@
 body {
     margin: 0;
 }
+.image{
+    background-image: url(dogs-w-sheree.png);
+}
 h1{
     font-family: 'Archivo Black', sans-serif;
     /* font-family: 'Russo One', sans-serif; */
