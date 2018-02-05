@@ -9,60 +9,62 @@ document.getElementById("square").addEventListener("onmouseover", mouseOver);
 document.getElementById("square").addEventListener("onkeydown", keyDownBlue);
 document.getElementById("square").addEventListener("onkeydown", keyDownRed);
 
+// function keyDown(e) {
+//   var x = event.keyCode;
+//   if (x == 66) {
+//         var y = document.getElementById("square");
+//         y.style.backgroundColor = document.getElementById("square");
+//         y.style.backgroundColor = 'blue';
+//
+//   } else if (x == 82) {
+//         var y = document.getElementById("square");
+//         y.style.backgroundColor = document.getElementById("square");
+//         y.style.backgroundColor = 'red';
+//   } else if (x == 89) {
+//         var y = document.getElementById("square");
+//         y.style.backgroundColor = document.getElementById("square");
+//         y.style.backgroundColor = 'yellow';
+//   }
+//   else if (x == 71) {
+//         var y = document.getElementById("square");
+//         y.style.backgroundColor = document.getElementById("square");
+//         y.style.backgroundColor = 'green';
+//   } else {
+//         var y = document.getElementById("square");
+//         y.style.backgroundColor = document.getElementById("square");
+//         y.style.backgroundColor = 'orange';
+//     }
+// }
 function keyDown(e) {
   var x = event.keyCode;
-  if (x == 66) {
-        var y = document.getElementById("square");
-        y.style.backgroundColor = document.getElementById("square");
-        y.style.backgroundColor = 'blue';
-
-  } else if (x == 82) {
-        var y = document.getElementById("square");
-        y.style.backgroundColor = document.getElementById("square");
-        y.style.backgroundColor = 'red';
-  } else if (x == 89) {
-        var y = document.getElementById("square");
-        y.style.backgroundColor = document.getElementById("square");
-        y.style.backgroundColor = 'yellow';
-  }
-  else if (x == 71) {
-        var y = document.getElementById("square");
-        y.style.backgroundColor = document.getElementById("square");
-        y.style.backgroundColor = 'green';
-  } else {
-        var y = document.getElementById("square");
-        y.style.backgroundColor = document.getElementById("square");
-        y.style.backgroundColor = 'orange';
+    switch(x){
+      case '66':
+          var y = document.getElementById("square");
+          y.style.backgroundColor = document.getElementById("square");
+          y.style.backgroundColor = 'blue';
+      break;
+      case '82':
+          var y = document.getElementById("square");
+          y.style.backgroundColor = document.getElementById("square");
+          y.style.backgroundColor = 'red';
+      break;
+      case '89':
+          var y = document.getElementById("square");
+          y.style.backgroundColor = document.getElementById("square");
+          y.style.backgroundColor = 'yellow';
+      break;
+      case '71':
+          var y = document.getElementById("square");
+          y.style.backgroundColor = document.getElementById("square");
+          y.style.backgroundColor = 'green';
+      break;
+      default:
+          var y = document.getElementById("square");
+          y.style.backgroundColor = document.getElementById("square");
+          y.style.backgroundColor = 'orange';
     }
+
 }
-// switch(x)
-//   case '66':  {
-//       var y = document.getElementById("square");
-//       y.style.backgroundColor = document.getElementById("square");
-//       y.style.backgroundColor = 'blue';
-//   break;
-//  case(82)
-//       var y = document.getElementById("square");
-//       y.style.backgroundColor = document.getElementById("square");
-//       y.style.backgroundColor = 'red';
-//   break;
-//  case '89':
-//       var y = document.getElementById("square");
-//       y.style.backgroundColor = document.getElementById("square");
-//       y.style.backgroundColor = 'yellow';
-// }
-// else if (x == 71) {
-//       var y = document.getElementById("square");
-//       y.style.backgroundColor = document.getElementById("square");
-//       y.style.backgroundColor = 'green';
-// } else {
-//       var y = document.getElementById("square");
-//       y.style.backgroundColor = document.getElementById("square");
-//       y.style.backgroundColor = 'orange';
-//   }
-// }
-
-
 
 // if (body.style.backgroundColor === 'red'){
 //       body.style.backgroundColor = 'orange';
@@ -126,19 +128,6 @@ function mouseDown() {
 document.getElementById("square").addEventListener("onmousedown", mouseDown);
 
 
-// function keyDownRed(e) {
-//   var x = event.keyCode;
-//   if (x == 82) {
-//         var y = document.getElementById("square");
-//         y.style.backgroundColor = document.getElementById("square");
-//         y.style.backgroundColor = 'red';
-//           e.stopPropagation();
-//   }
-// }
-// document.getElementById("square").addEventListener("onkeydown", keyDownRed);
-//
-
-
 
 function mouseUp() {
     var x = document.getElementById("square");
@@ -161,9 +150,3 @@ function onScroll(e) {
         e.stopPropagation();
 }
 document.querySelector("body").addEventListener("onwheel", onScroll);
-
-
-//var body = document.querySelector("body");
-
-
-//window.MouseWheelEvent

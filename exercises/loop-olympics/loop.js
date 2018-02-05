@@ -42,7 +42,6 @@ for(i = 1; i < fruit.length; i+= 2){
 }
 
 
-
 var peopleArray = [
   {
     name: "Harrison Ford",
@@ -62,12 +61,12 @@ var peopleArray = [
   }
 ]
 
+
 var array = [];
 for (var i = 0; i < peopleArray.length; i++){
     array.push(peopleArray[i].name);
 }
 console.log(array);
-
 
 
 var names= [];

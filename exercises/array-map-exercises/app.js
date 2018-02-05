@@ -12,6 +12,12 @@ function doubleNumbers(arr){
 doubleNumbers([2, 5, 100]);
 
 
+function doubleNumbers(arr){
+var double = arr.map((num) => (num * 2))
+    return double
+}
+console.log(doubleNumbers([2, 5, 100]));
+
 
 function doubleNumbers(arr){
   var double = arr.map(function(num){

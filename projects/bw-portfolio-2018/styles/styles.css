@@ -8,6 +8,7 @@
 body {
     margin: 0;
 }
+
 h1{
     font-family: 'Archivo Black', sans-serif;
     font-size: 24px;
@@ -96,7 +97,7 @@ h1{
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-top: 25px solid #16315C;
+    border-top: 25px solid #2b507d
     margin:0 auto;
     margin-top:-10px;
     /* background-color:#416891; */
@@ -112,7 +113,7 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     display: inline-block;
-    color: black;
+    color: #25426D;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
@@ -123,8 +124,6 @@ h1{
     background-color: rgba(221, 221, 221, .25);
     color:#28b3f7;
 }
-
-/* Add an active class to highlight the current page */
 /* .active {
     background-color: #4CAF50;
     color: white;
@@ -133,9 +132,7 @@ h1{
     display: none;
 }
 
-
 /*PORTFOLIO GALLERY-----------------------------------------------*/
-
 section{
     margin-top:30px;
 }
@@ -186,24 +183,19 @@ section{
     right: 0px;
     border-radius: 3px 0 0 3px;
   }
-  /* .prev {
-    left: 0px;
-  } */
 
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-
+        background-color: rgba(0, 0, 0, 0.7);
   }
 
-  /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
   }
 
   img {
@@ -212,7 +204,6 @@ section{
 
   .caption-container {
     text-align: center;
-    /* background-color: black; */
     padding: 2px 16px;
     color: white;
   }
@@ -227,9 +218,6 @@ section{
   }
 
   /* MODAL---------------------------------------------------------------- */
-  /* .row > .column1 {
-    padding: 0 8px;
-  } */
 
   .row:after {
     content: "";
@@ -237,10 +225,6 @@ section{
     clear: both;
   }
 
-  /* .column1 {
-    float: left;
-    width: 25%;
-  } */
   .iphone{
       margin-top:10px;
       width: 210px;
@@ -263,7 +247,6 @@ section{
   /* Modal Content */
   .modal-content {
     position: relative;
-    /* background-color: #fefefe; */
     margin: auto;
     padding: 0;
     width: 70%;
@@ -272,7 +255,7 @@ section{
     z-index: 100;
   }
 
-  /* The Close Button */
+  /* Close Button */
   .close {
     color: white;
     position: absolute;
@@ -296,8 +279,6 @@ section{
   .cursor {
     cursor: pointer
   }
-
-  /* Next & previous buttons */
 
 /*
   img.hover-shadow {
@@ -337,10 +318,9 @@ section{
 
   .image-break{
     width: 100%;
-    height:620px;
+    height:auto;
     border: none;
-    /* background-color: #244169; */
-    margin-top:100px;
+    margin-top:75px;
     position: relative;
  }
 /* .family-title{
@@ -364,19 +344,14 @@ section{
 .family-image{
     position: relative;
     width: 100%;
-    height: 100%;
-    background-image: url(../images/dogs-w-sheree.png);
+    height: auto;
+    /* background-image: url(../images18/dogs-w-sheree.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
-  /* .mtn-pic-break{
-    width:100%;
-    height: auto;
-    margin-top: 50px;
-  } */
   .logos{
     width:100%;
     text-align: center;
@@ -407,7 +382,11 @@ section{
     position: relative;
     margin: 0 auto;
     z-index: 60;
-    margin-top:30px;
+    margin-top:20px;
+}
+.bw-color-bottom{
+    width:135px;
+    height: auto;
 }
 
 .page-break-resume{
@@ -446,6 +425,7 @@ section{
     height: auto;
 }
 .expand{
+    color: #25426D;
     /* border: 2px solid grey;
     width:10px;
     height:25px; */
@@ -464,13 +444,13 @@ section{
 }
 
 footer{
-    margin-top:200px;
+    margin-top:100px;
     background-color: #0D172E;
     max-width: 100%;
     height:100px;
 }
 .banner-footer{
-    margin-top:200px;
+    margin-top:100px;
     margin: 0 auto;
     width: 100%;
     height:100px;
@@ -519,10 +499,10 @@ p {
   font-size: 13px;
 }
 
-.link{
+/* .link{
     text-align: center;
-
-}
+    color:#28b3f7;
+} */
 .link a:link{
     font-family: 'Open Sans', sans-serif;
     font-size: .9em;
@@ -620,10 +600,6 @@ figcaption a:active{
 }
 
 
-
-
-
-
 @media screen and (max-width: 768px) {
 .topnav a:not(:last-child) {
     display: none;
@@ -632,7 +608,7 @@ figcaption a:active{
     float: right;
     display: block;
   }
-    .container {
+.container {
     margin: 0 auto;
     padding: 0 20px 0 20px;
   }
@@ -684,18 +660,16 @@ p{
     display:block;
     width: 100%
 }
-  /* .name{
-        position: absolute;
-        z-index: 1;
-        text-align: center;
-        top:1px;
-        left:25%;
-  } */
+
 .bw-color-image{
     position: relative;
     margin: 0 auto;
     z-index: 60;
     margin-top:20px;
+  }
+  .bw-color-bottom{
+      width:120px;
+      height: auto;
   }
 .logo-container{
     position: relative;
@@ -726,18 +700,11 @@ p{
     padding-bottom:45px;
 }
 
-
 .res {
-    /* background: #EEE; */
-    /* width:70%; */
     margin: 69px auto;
     padding: 0px 0;
     text-align: center;
-    /* box-shadow: 0 3px 5px rgba(0,0,0,0.3); */
   }
-/* .name {
-    left:26%;
-    } */
 
 .resume {
     position: relative;
@@ -745,11 +712,9 @@ p{
     width:100%;
     height: 0px;
 }
-
 .res {
     padding: 0px 0;
     text-align: center;
-    /* box-shadow: 0 3px 5px rgba(0,0,0,0.3); */
 }
 .about-me{
     text-align: left;
@@ -763,10 +728,11 @@ p{
   .intro {
       font-family: 'Open Sans', sans-serif;
       line-height: 30px;
-      width:85%;
+      width:88%;
       text-align: left;
       margin: 0 auto;
       position: relative;
+      padding-top:5px;
   }
   .header-res{
       display: none
@@ -778,6 +744,11 @@ p{
       font-size:.7em;
       margin-bottom:10px;
   }
+
+  /* .family-image {
+      width:100%;
+      height:auto;
+  } */
 }
 
 @media screen and (max-width: 675px){
@@ -789,26 +760,14 @@ p{
     }
     .image-break{
       width: 100%;
-      height:280px;
+      height:auto;
       border: none;
-      margin-top:100px;
+      margin-top:50px;
       position: relative;
    }
 
 }
-@media screen and (max-width: 675px){
-    .family-image{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-image: url(../images/dogs-w-sheree-675.png);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
 
-    }
-}
 @media screen and (max-width: 550px){
     .prev,
     .next {
@@ -826,12 +785,12 @@ p{
     }
 }
 
-
 @media screen and (max-width:420px) {
 .container {
     margin: 0 auto;
-    display:block
-}
+    padding: 0 10px 0 10px;
+      }
+
 
 .name {
     position: absolute;
@@ -864,9 +823,7 @@ p{
     margin-top:0px;
     width:90%
     }
-.header-res{
-    display: none
-}
+
 .prev,
 .next {
     cursor: pointer;
@@ -888,21 +845,15 @@ p{
       margin-top:100px;
       position: relative;
    } */
-.family-image{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/dogs-w-sheree-675.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+
     figcaption{
         font-family: 'Open Sans', sans-serif;
         color:white;
         margin-top:10px;
         font-size:.6em;
         margin-bottom:10px;
+    }
+    .header-res{
+        display: none
     }
 }

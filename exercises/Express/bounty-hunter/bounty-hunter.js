@@ -55,38 +55,38 @@ app.post("/", (req, res) => {
         // res.send(bounties);
         return res.send(req.body);
 })
-//
-//DELETE
-// app.delete("/:id", (req, res) => {
-//     bounties = bounties.filter(item => item.id !== req.parms.id);
-//         return res.send({msg:"items gone"});
-//     });
-// delete("/:id", (req, res)=>{
-//     bounties = bounties.filter((bounty)=>{
-//         return bounty._id !==req.params.id
-//     })
-//
-//     res.send({
-//         message: "Item gone"
-//     })
-// })
-//
-//     // res.send({msg: "Item removed "})
-//
-// //req.params
-//
-// //for N loop only for objects
-// app.put("/bounty/:id", (req, res) => {
-//         const index = bounties.findIndex(item => item.id === req.params.id);
-//         const foundBounty = bounties[index];
-//         for (let prop in foundBounty) {
-//           if(foundBounty.hasOwnProperty(prop)){
-//               foundBounty[prop] = rect.body[prop] || foundBounty[prop]
-//         }                          //undefined
-//     }
-//     bounties[index] = foundBounty; //pass by reference
-//     return res.send(bounties)
-// });
+
+// DELETE
+app.delete("/:id", (req, res) => {
+    bounties = bounties.filter(item => item.id !== req.parms.id);
+        return res.send({msg:"items gone"});
+    });
+delete("/:id", (req, res)=>{
+    bounties = bounties.filter((bounty)=>{
+        return bounty._id !==req.params.id
+    })
+
+    res.send({
+        message: "Item gone"
+    })
+})
+
+    // res.send({msg: "Item removed "})
+
+//req.params
+
+//for N loop only for objects
+app.put("/bounty/:id", (req, res) => {
+        const index = bounties.findIndex(item => item.id === req.params.id);
+        const foundBounty = bounties[index];
+        for (let prop in foundBounty) {
+          if(foundBounty.hasOwnProperty(prop)){
+              foundBounty[prop] = rect.body[prop] || foundBounty[prop]
+        }                          //undefined
+    }
+    bounties[index] = foundBounty; //pass by reference
+    return res.send(bounties)
+});
 
 // const bounties = [
 //     {
@@ -107,6 +107,3 @@ app.post("/", (req, res) => {
 app.listen(port, ()=>{
     console.log(`App is listening on port ${port}!`)
 })
-// app.listen(8000, ()=>{
-//     console.log(`Server is listening on port 8000`)
-// })
