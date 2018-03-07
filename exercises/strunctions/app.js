@@ -65,11 +65,17 @@ console.log(match(str));
 ////---split()---////
 function splitString(){
 var str = "The year was 2011.";
-var splitted = str.split(" ", 2).join(" ");
+var splitted = str.split(" ", 3).join(" ");
     console.log(splitted.toString());
 }
 console.log(splitString());
 
+str = "Please visit Microsoft and Microsoft!";
+var n = str.replace(/Microsoft/g, "W3Schools");
+//Please visit W3Schools and W3Schools!
+
+"hello".split('').join(' ')
+//"h e l l o"
 
 // var str = 'Hi,How,are,you?';
 //
