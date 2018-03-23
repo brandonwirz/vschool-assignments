@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <!-- normalizer alternative to css reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+      crossorigin="anonymous"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Portfolio</title>
 
@@ -32,9 +32,8 @@
                 </div>
             </nav>
                  <div class="banner-container">
-                     <img class="name" src="./images18/bw-logo2.png">
-
-                   <img src="./images18/banner_header.jpg" class="banner-header" alt="header"/>
+                    <img class="name" src="./images18/bw-logo2.png">
+                    <img src="./images18/banner_header.jpg" class="banner-header" alt="header"/>
                     <div class="arrow-down"></div>
                  </div>
             </div>
@@ -164,7 +163,7 @@
                 <figcaption class="caption">
                 <a href="https://www.mrsfields.com/"
                 target="_blank" alt="mrsfields desktop">Famous Brands/Mrs Fields Corporate Website</a>
-                <a href="http://wirzdesign.com/famousbrands-mobile.html"
+                <a href="http://wirzdesign.com/mrs-fields-mobile.html"
                 target="_blank" alt="mrsfields mobile">/ Mobile site design</a>
                 </figcaption>
                  <a href="#" target="_blank">
@@ -268,19 +267,25 @@
             <div class="column1">
                   <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(15)" alt="">
             </div>
+        </div>
     </div>
-</div>
+    <br />
+    <p><span class="recent-work">Corporate Identity:</span>
+        <a class="intro-link logos-link" href="logos.html" target="_blank">Various Logo Design</a>
+    </p>
 </div>
 
-        <section class="image-break">
+
+
+        <section class="family-image">
              <!-- <div> -->
                   <!-- <img class="logos" src="./images18/logos.png" alt=""/> -->
                       <!-- </div> -->
-                   <div class="family-image">
+                   <!-- <div class="family-image"> -->
                          <!-- <p class="family-title"></p> -->
-                        <img class="family-image" src="./images18/dogs-w-sheree.png" alt="dogs-sheree"/>
-                  </div>
-             </div>
+                        <!-- <img class="family-image" src="./images18/dogs-w-sheree.png" alt="dogs-sheree"/> -->
+                  <!-- </div> -->
+             <!-- </div> -->
         </section>
 
         <section id="about" class="about">
@@ -335,6 +340,9 @@
         </footer>
 
         <!-- javascript -->
+        <script src="./js/fade-in.js"></script>
+        <script src="./js/nav.js"></script>
         <script src="./js/bw-web.js"></script>
+
     </body>
 </html>

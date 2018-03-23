@@ -5,8 +5,9 @@
 * {
     box-sizing: border-box;
 }
-body {
+body, html {
     margin: 0;
+    height: 100%;
 }
 
 h1{
@@ -47,6 +48,7 @@ h1{
     margin:0 auto;
     left: 0;
     right: 0;
+    display: none;
 }
 .top-icon{
      /* text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white; */
@@ -341,15 +343,19 @@ section{
     min-height: 400px;
     background: transparent;
 } */
-.family-image{
+
+/* .family-image{
     position: relative;
     width: 100%;
     height: auto;
-    /* background-image: url(../images18/dogs-w-sheree.png);
+} */
+.family-image{
+    height: 90%;
+    background-image: url(../images18/dogs-w-sheree.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
   .logos{
@@ -557,6 +563,39 @@ figcaption a:active{
     color:#dae8ee;
     text-decoration: none;
 }
+.recent-work{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:9px;
+    width:400px;
+}
+.logo-page{
+    text-align: center;
+}
+ .bw-logos-sm{
+    /* display:none; */
+}
+.bw-logos{
+    text-align: center;
+    width:70%;
+    height: auto;
+}
+.logos-link{
+    font-size:1em;
+    text-decoration: none;
+}
+.mobile{
+    text-align: center;
+    margin:0 auto;
+}
+.mrs-fields-mobile{
+
+    width:80%;
+    height:auto;
+}
 
 @media screen and (max-width: 1150px){
     .prev,
@@ -660,7 +699,15 @@ p{
     display:block;
     width: 100%
 }
-
+.family-image{
+    height: 80%;
+    background-image: url(../images18/dogs-w-sheree-med.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
 .bw-color-image{
     position: relative;
     margin: 0 auto;
@@ -744,6 +791,11 @@ p{
       font-size:.7em;
       margin-bottom:10px;
   }
+  .bw-logos{
+      text-align: center;
+      width:80%;
+      height: auto;
+  }
 
   /* .family-image {
       width:100%;
@@ -765,7 +817,11 @@ p{
       margin-top:50px;
       position: relative;
    }
-
+   .bw-logos{
+       text-align: center;
+       width:80%;
+       height: auto;
+   }
 }
 
 @media screen and (max-width: 550px){
@@ -775,6 +831,16 @@ p{
         position: absolute;
         top: 140px;
     }
+    .bw-logos{
+        display: none;
+    }
+    .bw-logos-sm{
+        text-align: center;
+        margin: 0 auto;
+        background-image: url(../images18/logos-2016-sm.jpg);
+        width:362px;
+        height: 712px;
+    }
 }
 @media screen and (max-width: 500px){
     .prev,
@@ -783,15 +849,25 @@ p{
         position: absolute;
         top: 120px;
     }
+
 }
 
 @media screen and (max-width:420px) {
 .container {
     margin: 0 auto;
     padding: 0 10px 0 10px;
-      }
+}
+.bw-logos{
+    display: none;
+}
+.bw-logos-sm{
+    background-image: url(../images18/logos-2016-sm2.jpg);
+    width:335px;
+    height: 665px;
+    margin: 0 auto;
+    text-align: center;
 
-
+}
 .name {
     position: absolute;
     z-index: 1;
@@ -822,7 +898,7 @@ p{
     position: relative;
     margin-top:0px;
     width:90%
-    }
+}
 
 .prev,
 .next {
@@ -845,15 +921,25 @@ p{
       margin-top:100px;
       position: relative;
    } */
+   .family-image{
+       height: 60% !important;
+       width:100% !important;
+       background-image: url(../images18/dogs-w-sheree-sm.png) !important;
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
 
     figcaption{
         font-family: 'Open Sans', sans-serif;
         color:white;
         margin-top:10px;
-        font-size:.6em;
+        font-size:.4em;
         margin-bottom:10px;
     }
     .header-res{
         display: none
     }
+
 }
